@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}
+    首页
+{% endblock title %}
+{% block content %}
+            <form method="post" action="">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="title">文章标题</label>
+                    <input type="text" id="title" name="title" value="{{ blog.title }}">
+                </div>
+                <div class="form-group">
+                    <label for="classify">栏目</label>
+                    <select class="form-control" id="classify" name="classify">
+                            <option value="none">请选择栏目..</option>
+                        {% for classify in classifies %}
+                            <option value="{{ classify.id }}"
+                                {% if classify.id == blog.classify.id %}
+                                    selected
+                                {% endif %}
+                            >
+                                {{ classify }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="body">文章正文</label>
+                    <textarea id="body" name="body" rows="12">{{ blog.body }}</textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">完成</button>
+            </form>
+{% endblock content %}

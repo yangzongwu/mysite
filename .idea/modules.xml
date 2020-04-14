@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../CS study/Python/.idea/Python.iml" filepath="$PROJECT_DIR$/../CS study/Python/.idea/Python.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mynote/.idea/mynote.iml" filepath="$PROJECT_DIR$/../mynote/.idea/mynote.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/mysite.iml" filepath="$PROJECT_DIR$/.idea/mysite.iml" />
+    </modules>
+  </component>
+</project>

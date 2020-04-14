@@ -1,0 +1,96 @@
+{% load notifications_tags %}
+{% notifications_unread as unread_count %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+  <a class="navbar-brand" href="#">
+    <img src="https://tse1-mm.cn.bing.net/th/id/OIP.kQ3Ds3GeMrpIxpxMAPzIDgHaE7?w=300&h=199&c=7&o=5&pid=1.7" width="30" height="30" alt="">
+  </a>
+
+  <a class="navbar-brand" href="{% url 'blog:blog_list' %}">Welcome to My Blog</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'blog:blog_list' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'blog:blog_create' %}">New</a>
+    </li>
+    {% if user.is_authenticated %}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownuserprofile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {% if unread_count %}
+                <svg viewBox="0 0 8 8" width="8px" height="8px">
+                    <circle cx="2" cy="2" r="2" fill="#ff6b6b"></circle>
+                </svg>
+              {% endif %}
+              {{ user.username }}
+            </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownuserprofile">
+               <a class="dropdown-item" href="{% url 'notice:list' %}">通知
+                 {% if unread_count %}
+                  <span class="badge badge-danger">{{ unread_count }}</span>
+                 {% endif %}
+               </a>
+                <a class="dropdown-item" href='{% url "user:edit" user.id %}'>个人信息</a>
+                <a class="dropdown-item" href="#" onclick="user_delete()">删除个人账户</a>
+                <a class="dropdown-item" href="{% url 'user:logout' %}">退出登录</a>
+            </div>
+          </li>
+    {% else %}
+      <li>
+        <a class="nav-link active" href="{% url 'user:login' %}">Login</a>
+      </li>
+    {% endif %}
+    </ul>
+  </div>
+</nav>
+
+
+{% if user.is_authenticated %}
+<form
+    style="display:none;"
+    id="user_delete"
+    action="{% url 'user:delete' user.id %}"
+    method="POST"
+>
+{% csrf_token %}
+    <button type="submit">发送</button>
+</form>
+    <script>
+        function user_delete() {
+            layer.open({
+                title: "确认删除",
+                content: "确认删除用户资料吗？",
+                yes: function(index, layero) {
+                    $('form#user_delete button').click();
+                    layer.close(index);
+                },
+            })
+        }
+    </script>
+{% endif %}

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}
+    首页
+{% endblock title %}
+{% block content %}
+<div class="">
+    <br/>
+    <form method="post" action="" enctype="multipart/form-data">
+        {% csrf_token %}
+    <div class="form-group">
+        <label for="classify">分类</label>
+        <select class="form-control" id="classify" name="classify">
+            <option value="none">请选择栏目..</option>
+            {% for classify in classifies %}
+                <option value="{{ classify.id }}">{{ classify }}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+        <div class="form-group">
+                <label for="avatar">标题图</label>
+                <input type="file" class="form-control-file" name="avatar" id="avatar">
+            </div>
+
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" size="80">
+        <br/><br/>
+        <textarea id="body" name="body" rows=20 cols="120"></textarea>
+        <button type="submit">Publish</button>
+    </form>
+</div>
+
+{% endblock content %}
