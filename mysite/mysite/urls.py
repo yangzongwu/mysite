@@ -17,15 +17,17 @@ import notifications.urls
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import path,include
-
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('blog.urls',namespace='blog')),
+    path('', include('blog.urls', namespace='blog')),
     path('user/', include('user.urls', namespace='user')),
     path('password-reset/', include('password_reset.urls')),
     path('comment/', include('comment.urls', namespace='comment')),
     path('inbox/notifications/', include(notifications.urls, namespace='notifications')),
     path('notice/', include('notice.urls', namespace='notice')),
-]+ static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
+    path('record/', include('record.urls', namespace='record')),
+]
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

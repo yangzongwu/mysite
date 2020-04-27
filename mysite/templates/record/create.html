@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}
+    todolist
+{% endblock title %}
+{% block content %}
+<div class="">
+    <br/>
+    <form method="post" action="" enctype="multipart/form-data">
+        {% csrf_token %}
+        <textarea id="body" name="body" rows=20 cols="120"></textarea>
+        <button type="submit">Publish</button>
+    </form>
+</div>
+
+{% endblock content %}

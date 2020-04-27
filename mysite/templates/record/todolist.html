@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+    record
+{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <h3><a href="{% url 'record:todolist_add' %}">add todo list</a></h3>
+
+    <div>
+        <a href="{% url 'record:todolist_list' %}?order=finished">
+            finished
+        </a>
+        <a href="{% url 'record:todolist_list' %}?order=todolist">
+            todolist
+        </a>
+        <a href="{% url 'record:todolist_list' %}?order=all">
+            all
+        </a>
+    </div>
+
+
+    {% for todolist in todolists %}
+        <ul>
+            <li class="list-group-item" id="notice_link">
+                <p>
+                    created:{{ todolist.created_time|date:'Y-m-d' }}
+                    <a href="{% url 'record:todolist_edit' todolist.id %}">edit</a>
+                    <a href="{% url 'record:todolist_delete' todolist.id %}">delete</a>
+                    <button class="badge badge-secondary" value="">
+                        {% if todolist.is_done %}
+                            finished
+                        {% else %}
+                            unfinished
+                        {% endif %}
+                    </button>
+                </p>
+                <p>{{ todolist.body }}</p>
+            </li>
+        </ul>
+    {% endfor %}
+
+</div>
+{% endblock content %}

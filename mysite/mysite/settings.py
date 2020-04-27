@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '#tc+knnxd#!3qjffyi6pp$_8r)egho$)n%=xbp=^h9g5qz3en4'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'ckeditor',
     'notifications',
     'notice',
+    'record',
 ]
 
 MIDDLEWARE = [
@@ -125,9 +126,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+'''STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
-)
+)'''
+
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}
+    首页
+{% endblock title %}
+{% block content %}
+            <form method="post" action="">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="body">文章正文</label>
+                    <textarea id="body" name="body" rows="12">{{ todolist.body }}</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="is_done">栏目</label>
+                    <select class="is_done" id="is_done" name="is_done">
+                            <option value="True">True</option>
+                            <option value="False">False</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">完成</button>
+            </form>
+{% endblock content %}
