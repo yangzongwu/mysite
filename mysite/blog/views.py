@@ -33,14 +33,31 @@ def blog_update(request, id):
                 blog.classify = BlogClassify.objects.get(id=request.POST['classify'])
             else:
                 blog.classify = None
+
+            blog.tags.clear()
+            if request.POST['tag'] != '':
+                curs = request.POST['tag'].split(',')
+                rep=set()
+                for obj in Tag.objects.all():
+                    rep.add(obj.name)
+                for cur in curs:
+                    if not cur in rep:
+                        rep.add(cur)
+                        new_tag = Tag(name = cur)
+                        new_tag.save()
+                    addtag=Tag.objects.get(name=cur)
+                    blog.tags.add(addtag)
+                    blog.save()
             blog.save()
+
             return redirect('blog:blog_detail', id=id)
         else:
             return HttpResponse("表单有问题")
     else:
         blog_post_form = BlogPostForm()
         classifies = BlogClassify.objects.all()
-        context = {'blog': blog, 'blog_post_form': blog_post_form, 'classifies': classifies, }
+        tags=''
+        context = {'blog': blog, 'blog_post_form': blog_post_form, 'classifies': classifies,'tags':tags }
         return render(request, 'blog/update.html', context)
 
 
@@ -48,35 +65,41 @@ def tag(request, id):
     # 记得在开始部分导入 Tag 类
     t = get_object_or_404(Tag, id=id)
     blogs = Blog.objects.filter(tags=id).order_by('-created_time')
-    return render(request, 'blog/list.html', context={'blogs': blogs,"order":"","search":""})
+    return render(request, 'blog/list.html', context={'blogs': blogs, "order": "", "search": ""})
 
 
 def classify(request, id):
     # 记得在开始部分导入 Tag 类
     t = get_object_or_404(BlogClassify, id=id)
     blogs = Blog.objects.filter(classify=t).order_by('-created_time')
-    return render(request, 'blog/list.html', context={'blogs': blogs,"order":"","search":""})
-
-
-
-
-
-
+    return render(request, 'blog/list.html', context={'blogs': blogs, "order": "", "search": ""})
 
 
 def blog_create(request):
     if request.method == 'POST':
-        blog_post_form = BlogPostForm(request.POST,  request.FILES)
+        blog_post_form = BlogPostForm(request.POST, request.FILES)
         if blog_post_form.is_valid():
             # commit=False保持数据，暂时不提交
             new_blog = blog_post_form.save(commit=False)
             new_blog.author = User.objects.get(id=request.user.id)
-            print(1)
-            print(new_blog.avatar)
             if request.POST['classify'] != 'none':
                 new_blog.classify = BlogClassify.objects.get(id=request.POST['classify'])
-
             new_blog.save()
+
+            if request.POST['tag'] != 'none':
+                curs = request.POST['tag'].split(',')
+                rep=set()
+                for obj in Tag.objects.all():
+                    rep.add(obj.name)
+                for cur in curs:
+                    if not cur in rep:
+                        rep.add(cur)
+                        new_tag = Tag(name = cur)
+                        new_tag.save()
+                    addtag=Tag.objects.get(name=cur)
+                    new_blog.tags.add(addtag)
+                    new_blog.save()
+
 
             return redirect("blog:blog_list")
         else:
@@ -84,7 +107,8 @@ def blog_create(request):
     else:
         blog_post_form = BlogPostForm()
         classifies = BlogClassify.objects.all()
-        context = {'blog_post_form': blog_post_form, 'classifies': classifies}
+        tags = Tag.objects.all()
+        context = {'blog_post_form': blog_post_form, 'classifies': classifies, 'tags': tags}
         return render(request, 'blog/create.html', context)
 
 
@@ -140,7 +164,6 @@ def blog_detail(request, id):
     comments = Comment.objects.filter(blog=id)
     blog.total_views += 1
     blog.save(update_fields=['total_views'])
-
 
     md = markdown.Markdown(extensions=[
         'markdown.extensions.extra',
