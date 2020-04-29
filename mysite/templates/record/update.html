@@ -1,22 +1,37 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 {% block title %}
-    首页
+    Todolist
 {% endblock title %}
 {% block content %}
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
             <form method="post" action="">
                 {% csrf_token %}
                 <div class="form-group">
-                    <label for="body">文章正文</label>
-                    <textarea id="body" name="body" rows="12">{{ todolist.body }}</textarea>
+                    <label for="body">To do list:</label>
+                    <textarea class="form-control" id="body" name="body" >{{ todolist.body }}</textarea>
                 </div>
                 <div class="form-group">
-                    <label for="is_done">栏目</label>
-                    <select class="is_done" id="is_done" name="is_done">
+                    <label for="feed_back">Feedback:</label>
+                    <textarea class="form-control" id="feed_back" name="feed_back" >{{ todolist.feed_back }}</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="is_done">finished?</label>
+                    {% if cur_user %}
+                    <select class="form-control" id="is_done" name="is_done">
                             <option value="True">True</option>
                             <option value="False">False</option>
                     </select>
-                </div>
-                <button type="submit" class="btn btn-primary">完成</button>
+                    {% else %}
+                    <select class="form-control" id="is_done" name="is_done">
+                            <option value="False">False</option>
+                    </select>
+                    {% endif %}
+                    </div>
+                <button type="submit" class="btn btn-primary">Confirm</button>
             </form>
+        </div>
+    </div>
 {% endblock content %}

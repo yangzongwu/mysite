@@ -1,48 +1,70 @@
 {% extends "base.html" %}
 {% load staticfiles %}
+{% block css %}
 
+{% endblock css %}
 {% block title %}
-    record
+    Todolist
 {% endblock title %}
 
 {% block content %}
 <div class="container">
-    <h3><a href="{% url 'record:todolist_add' %}">add todo list</a></h3>
 
     <div>
-        <a href="{% url 'record:todolist_list' %}?order=finished">
-            finished
-        </a>
-        <a href="{% url 'record:todolist_list' %}?order=todolist">
-            todolist
-        </a>
-        <a href="{% url 'record:todolist_list' %}?order=all">
-            all
-        </a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="breadcrumb-item">
+                    <a href="{% url 'record:todolist_list' %}?order=finished">
+                        finished
+                    </a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="{% url 'record:todolist_list' %}?order=todolist">
+                    todolist
+                    </a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="{% url 'record:todolist_list' %}?order=all">
+                    all
+                    </a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <h3><a href="{% url 'record:todolist_add' %}">New</a></h3>
+            </form>
+          </div>
+        </nav>
     </div>
 
 
-    {% for todolist in todolists %}
-        <ul>
-            <li class="list-group-item" id="notice_link">
-                <p>
-                    created:{{ todolist.created_time|date:'Y-m-d' }}
-                    <a href="{% url 'record:todolist_edit' todolist.id %}">edit</a>
-                    <a href="{% url 'record:todolist_delete' todolist.id %}">delete</a>
-                        {% if todolist.is_done %}
-                    <button class="badge badge-secondary" value="">
-                            finished
-                        </button>
-                        {% else %}
-                        <button class="badge badge-secondary" style="color:red" value="">
-                            unfinished
-                            </button>
-                        {% endif %}
 
-                </p>
-                <p>{{ todolist.body }}</p>
-            </li>
-        </ul>
+    {% for todolist in todolists %}
+    <div class="container">
+            <div class="card border-secondary  mb-3" style="">
+              {% if todolist.is_done %}
+                <h4 class="card-header  border-success">finished</h4>
+              {% else %}
+                <h4 class="card-header  border-success" style="color:red">unfinished</h4>
+              {% endif %}
+                <div class="card-body border-secondary  mb-3">
+                  <p class="card-text">{{ todolist.body }}</p>
+              </div>
+                <div class="card-body border-secondary  mb-3">
+                  <p class="card-text">{{ todolist.feed_back }}</p>
+              </div>
+                <div class="card-footer bg-transparent mb-2 text-muted">
+                  Published:{{ todolist.created_time|date:'Y-m-d' }}
+                  Updated:{{ todolist.updated_time|date:'Y-m-d' }}
+                  <a href="{% url 'record:todolist_edit' todolist.id %}" >Edit</a>
+                    {% if cur_user %}
+                      <a href="{% url 'record:todolist_delete' todolist.id %}" >Delete</a>
+                    {% else %}
+                      <a class="disabled" ref="{% url 'record:todolist_delete' todolist.id %}" >Delete</a>
+                    {% endif %}
+                </div>
+            </div>
+    </div>
     {% endfor %}
 
 </div>

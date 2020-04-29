@@ -1,16 +1,25 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 {% block title %}
-    todolist
+    Todolist
 {% endblock title %}
 {% block content %}
 <div class="">
-    <br/>
-    <form method="post" action="" enctype="multipart/form-data">
-        {% csrf_token %}
-        <textarea id="body" name="body" rows=20 cols="120"></textarea>
-        <button type="submit">Publish</button>
-    </form>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+        <form method="post" action="" enctype="multipart/form-data">
+            {% csrf_token %}
+            <h3 style="text-align: center">Welcome</h3>
+            <br/>
+            <div class="form-group">
+                <p>Any suggestion please showing below:</p>
+                <textarea id="body" name="body" class="form-control" placeholder="to do list ..."></textarea>
+            </div>
+            <br/>
+            <button class="btn btn-primary" type="submit">Confirm</button>
+        </form>
+    </div>
+    </div>
 </div>
 
 {% endblock content %}
