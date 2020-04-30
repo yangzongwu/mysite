@@ -56,7 +56,11 @@ def blog_update(request, id):
     else:
         blog_post_form = BlogPostForm()
         classifies = BlogClassify.objects.all()
+        cur_all_tags=blog.tags.all()
         tags=''
+        for curtag in cur_all_tags:
+            tags+=str(curtag.name)+','
+        tags=tags[:-1]
         context = {'blog': blog, 'blog_post_form': blog_post_form, 'classifies': classifies,'tags':tags }
         return render(request, 'blog/update.html', context)
 

@@ -5,25 +5,30 @@
 {% endblock title %}
 {% block content %}
 <div>
-    <form method="post" action=".">
+    <div class="jumbotron">
+        <div class="container">
+            <form method="post" action=".">
                 {% csrf_token %}
-                <div class="form-group col-md-4">
-                    <label for="username">昵称</label>
+                <div class="form-group">
+                    <label for="username">Username</label>
                     <input type="text" class="form-control" id="username" name="username" required>
                 </div>
-                <div class="form-group col-md-4">
+                <div class="form-group">
                     <label for="email">Email</label>
                     <input type="text" class="form-control" id="email" name="email">
+                    <small id="" class="form-text text-muted">We'll never share your Email with anyone else.</small>
                 </div>
-                <div class="form-group col-md-4">
-                    <label for="password">设置密码</label>
+                <div class="form-group">
+                    <label for="password">Password</label>
                     <input type="password" class="form-control" id="password" name="password" required>
                 </div>
-                <div class="form-group col-md-4">
-                    <label for="password2">确认密码</label>
+                <div class="form-group ">
+                    <label for="password2">Confirm Password</label>
                     <input type="password" class="form-control" id="password2" name="password2" required>
                 </div>
-                <button type="submit" class="btn btn-primary">提交</button>
+                <button type="submit" class="btn btn-primary">Register</button>
             </form>
+        </div>
+    </div>
 </div>
 {% endblock content %}

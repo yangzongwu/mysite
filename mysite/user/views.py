@@ -86,6 +86,7 @@ def user_login(request):
         if user_login_form.is_valid():
             data = user_login_form.cleaned_data
             # authenticate()方法验证用户名称和密码是否匹配
+            print(data['username'], data['password'])
             user = authenticate(username=data['username'], password=data['password'])
             if user:
                 # login()方法实现用户登录，将用户数据保存在session中

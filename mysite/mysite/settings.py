@@ -16,7 +16,6 @@ import dj_database_url
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
@@ -24,10 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '#tc+knnxd#!3qjffyi6pp$_8r)egho$)n%=xbp=^h9g5qz3en4'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
 
 # Application definition
 
@@ -79,7 +77,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
@@ -110,7 +107,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
@@ -124,18 +120,16 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
-
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-
 
 # SMTP服务器，改为你的邮箱的smtp!
 EMAIL_HOST = 'smtp.163.com'
@@ -150,15 +144,13 @@ EMAIL_USE_TLS = True
 # 默认的发件人
 DEFAULT_FROM_EMAIL = 'yzw的博客 <yangzong5@163.com>'
 
-
-
 CKEDITOR_CONFIGS = {
     # django-ckeditor默认使用default配置
     'default': {
         'extraPlugins': ','.join(['codesnippet', 'prism', 'widget', 'lineutils']),
         # 编辑器宽度自适应
-        'width':'auto',
-        'height':'250px',
+        'width': 'auto',
+        'height': '250px',
         # tab键转换空格数
         'tabSpaces': 4,
         # 工具栏风格
@@ -179,6 +171,6 @@ CKEDITOR_CONFIGS = {
             ['Maximize']
         ],
         # 加入代码块插件
-        #'extraPlugins': ','.join(['codesnippet']),
+        # 'extraPlugins': ','.join(['codesnippet']),
     }
 }

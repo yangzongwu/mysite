@@ -5,60 +5,61 @@
 {% endblock title %}
 {% block content %}
 
-    <h1>{{blog.title}}</h1>
+<div class="container">
     <div>
-        author:{{blog.author}}
-        <i class="fas fa-eye" style="color: lightskyblue;"></i>{{ blog.total_views }}
-        发布时间：{{ blog.created_time }}
-        <a href="{% url 'blog:blog_update' blog.id %}">Edit</a>
-        <a href="#" onclick="confirm_delete()">Delete</a>
-    </div>
-    <p>{{blog.body|safe}}</p>
-
-    <div>
-        <hr>
-    {% if user.is_authenticated %}
+        <h1>{{blog.title}}</h1>
         <div>
-            <form
-                action="{% url 'comment:post_comment' blog.id %}"
-                method="POST"
-            >
-            {% csrf_token %}
-                <div class="form-group">
-                    <label for="body">
-                        <strong>
-                            response：
-                        </strong>
-                    </label>
-                    <div>
-            {{ comment_form.media }}
-            {{ comment_form.body }}
-        </div>>
-                </div>
-                <!-- 提交按钮 -->
-                <button type="submit" class="btn btn-primary ">发送</button>
-            </form>
+            Author:{{blog.author}}&nbsp
+            <i class="fas fa-eye" style="color: lightskyblue;"></i>{{ blog.total_views }}&nbsp
+            Published:{{ blog.created_time|date:"Y/m/d" }}&nbsp
+            <a href="{% url 'blog:blog_update' blog.id %}">Edit</a>&nbsp
+            <a href="#" onclick="confirm_delete()">Delete</a>
         </div>
         <br>
-    {% else %}
-        <br>
-        <h5 class="row justify-content-center">
-            请<a href="{% url 'user:login' %}">登录</a>后回复
-        </h5>
-        <br>
-    {% endif %}
+        <div class="text-wrap" style="word-wrap: break-word;">
+            {{blog.body|safe}}
+        </div>
 
 
-        {% for comment in comments %}
-        {{ comment.user }}:
-        <br/>
-        {{ comment.body|safe }}
-        <br/>
-        {% endfor %}
+        <div>
+            <hr>
+        {% if user.is_authenticated %}
+            <div>
+                <form action="{% url 'comment:post_comment' blog.id %}" method="POST">
+                {% csrf_token %}
+                    <div class="form-group">
+                        <label for="body"><strong>response：</strong></label>
+                        <div>
+                            {{ comment_form.media|safe }}
+                            {{ comment_form.body|safe  }}
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary ">发送</button>
+                </form>
+            </div>
+            <br>
+        {% else %}
+            <br>
+            <h5 class="row justify-content-center">
+                After &nbsp<a href="{% url 'user:login' %}">login in</a>&nbsp then you can reply
+            </h5>
+            <br>
+        {% endif %}
+
+
+            {% for comment in comments %}
+            {{ comment.user }}:
+            <br/>
+            {{ comment.body|safe }}
+            <br/>
+            {% endfor %}
+        </div>
     </div>
+</div>
 
 
-    <script>
+
+<script>
     // 删除文章的函数
     function confirm_delete() {
         // 调用layer弹窗组件
@@ -76,12 +77,15 @@
     }
 
 </script>
-
 <script src="{% static 'ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js' %}"></script>
 <link rel="stylesheet" href="{% static 'prism/prism.css' %}">
 
 {% endblock content %}
-
+{% block script %}
+<script>
+    $(".django-ckeditor-widget").removeAttr('style');
+</script>
+{% endblock script %}
 {% block right_content %}
             {{ toc|safe }}
 {% endblock right_content %}

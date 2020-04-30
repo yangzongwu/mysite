@@ -4,36 +4,40 @@
     首页
 {% endblock title %}
 {% block content %}
-<div class="">
-    <br/>
-    <form method="post" action="" enctype="multipart/form-data">
+<div class="container">
+    <div>
+        <form method="post" action="" enctype="multipart/form-data">
         {% csrf_token %}
-    <div class="form-group">
-        <label for="classify">分类</label>
-        <select class="form-control" id="classify" name="classify">
-            <option value="none">请选择栏目..</option>
-            {% for classify in classifies %}
-                <option value="{{ classify.id }}">{{ classify }}</option>
-            {% endfor %}
-        </select>
-    </div>
-
-        <div class="form-group">
-        <label for="tag">tag</label>
-            <input type="text" id="tag" name="tag">
-    </div>
-
-        <div class="form-group">
-                <label for="avatar">标题图</label>
-                <input type="file" class="form-control-file" name="avatar" id="avatar">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" name="title" size="80">
+            </div>
+            <div class="form-group">
+                <label for="classify">Classify</label>
+                <select class="form-control" id="classify" name="classify">
+                    <option value="none">Please choose classify..</option>
+                    {% for classify in classifies %}
+                        <option value="{{ classify.id }}">{{ classify }}</option>
+                    {% endfor %}
+                </select>
             </div>
 
-        <label for="title">Title</label>
-        <input type="text" id="title" name="title" size="80">
-        <br/><br/>
-        <textarea id="body" name="body" rows=20 cols="120"></textarea>
-        <button type="submit">Publish</button>
+            <div class="form-group">
+                <label for="avatar">Avatar</label>
+                <input type="file" class="form-control-file" name="avatar" id="avatar">
+            </div>
+            <div class="form-group">
+                <textarea id="body" class="form-control" name="body" rows=20 cols="120" placeholder="please use markdown language"></textarea>
+            </div>
+
+
+            <div class="form-group">
+                <label for="tag">Tags</label>
+                    <input class="form-control" type="text" id="tag" name="tag" placeholder="please use ',' to seperate">
+            </div>
+            <button type="submit">Publish</button>
     </form>
+    </div>
 </div>
 
 {% endblock content %}

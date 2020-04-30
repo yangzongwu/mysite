@@ -4,26 +4,31 @@
     登录
 {% endblock title %}
 {% block content %}
-<div>
-    <form method="post" action=".">
-        {% csrf_token  %}
-        <div>
-            <p>New User?</p>
-            <p><a href="{% url 'user:register' %}">register</a></p>
+<div class="">
+    <div class="jumbotron">
+        <div class="container">
+            <div>
+                <p>New User?/<a href="{% url 'user:register' %}">Register</a></p>
+            </div>
 
+            <form method="post" action=".">
+                {% csrf_token  %}
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password">
+                </div>
+
+
+                <button type="submit" class="btn btn-primary">Login In</button>
+            </form>
+                <br/>
+            <p>Forget password ? </p>
+            <p>Click<a href='{% url "password_reset_recover" %}'><b> here </b></a>to reset password</p>
         </div>
-        <div>
-            <label for="username">username</label>
-            <input type="text" id="username" name="username">
-        </div>
-        <div>
-            <label for="password">password</label>
-            <input type="password" id="password" name="password">
-        </div>
-        <button type="submit">submit</button>
-    </form>
-    <br/>
-    <h5>忘记密码了？</h5>
-    <h5>点击<a href='{% url "password_reset_recover" %}'>这里</a>重置密码</h5>
+    </div>
 </div>
 {% endblock content %}

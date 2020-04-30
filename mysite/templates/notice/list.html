@@ -6,24 +6,22 @@
 {% endblock title %}
 
 {% block content %}
-<div class="container">
-    <div class="row mt-4 ml-4">
-        <a href="{% url 'notice:update' %}" class="btn btn-warning" role="button">清空所有通知</a>
-    </div>
-    <!-- 未读通知列表 -->
-    <div class="row mt-2 ml-4">
+<div class="">
+    <div class="container">
         <ul class="list-group">
-            {% for notice in notices %}
-                <li class="list-group-item" id="notice_link">
-                    <a href="{% url 'notice:update' %}?blog_id={{ notice.target.id }}&notice_id={{ notice.id }}"
-                       target="_blank"
-                    >{{ notice.actor }}在 {{ notice.target }}{{ notice.verb }}。
-                    </a>
-                    {{ notice.timestamp|date:"Y/m/d H:i" }}
-                </li>
-            {% endfor %}
-        </ul>
+                <li class="list-group-item active" ><a href="{% url 'notice:update' %}" class="btn btn-warning" role="button">清空所有通知</a></li>
+                {% for notice in notices %}
+                    <li class="list-group-item list-group-item-action" id="notice_link">
+                        <b style="color:blue">{{ notice.actor }}</b> {{ notice.verb }} you in
+                        <a href="{% url 'notice:update' %}?blog_id={{ notice.target.id }}&notice_id={{ notice.id }}"
+                           style="color:green" target="_blank">{{ notice.target.title }}
+                        </a>
+                        on <i style="color:light-dark">{{ notice.timestamp|date:"Y/m/d H:i" }}</i>
+                    </li>
+                {% endfor %}
+            </ul>
     </div>
+
 </div>
 
 <style>
