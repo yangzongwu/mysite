@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}
+    首页
+{% endblock title %}
+{% block content %}
+<div class="container">
+    <h3>Total viewers: {{total_views.views}}</h3>
+
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">IP</th>
+          <th scope="col">Time</th>
+        </tr>
+      </thead>
+        {% for user_ip in user_ips%}
+          <tbody>
+            <tr>
+              <th scope="row">{{user_ip.nid}}</th>
+              <td>{{user_ip.user_ip}}</td>
+              <td>{{user_ip.create_time}}</td>
+            </tr>
+          {% endfor %}
+      </tbody>
+</table>
+</div>
+{% endblock content %}

@@ -1,3 +1,5 @@
+import datetime
+
 import markdown
 from django.core.paginator import Paginator
 from django.db.models import Q
@@ -6,9 +8,39 @@ from django.http import HttpResponse
 
 from comment.forms import CommentForm
 from comment.models import Comment
-from .models import Blog, BlogClassify, Tag
+from .models import Blog, BlogClassify, Tag, Website_views,view_ip
 from .forms import BlogPostForm
 from django.contrib.auth.models import User
+
+def get_user_ip(request):
+    if 'HTTP_X_FORWARDED_FOR' in request.META:        # 获取用户真实IP地址
+        user_ip = request.META['HTTP_X_FORWARDED_FOR']
+    else:
+        user_ip = request.META['REMOTE_ADDR']
+    obj = view_ip.objects.first()
+    if not obj == None:                                # 判断数据表是否为空
+        ct = obj.create_time
+        if not ct.month == datetime.datetime.now().month or not ct.day == datetime.datetime.now().day:      # 判断表中数据是否为当日访问
+            objs = view_ip.objects.all()         # 不是当日访问则迭代删除表中数据
+            for i in objs:
+                i.delete()
+        if not view_ip.objects.filter(user_ip=user_ip):  # 判断当日用户是否已经访问过本网站
+            view_ip.objects.create(user_ip=user_ip)  # 将用户IP存入数据库
+            total_views_add()                         # 网站总访问量+1
+    else:
+        # print(user_ip)
+        view_ip.objects.create(user_ip = user_ip)
+        total_views_add()
+
+
+def total_views_add():
+    obj = Website_views.objects.first()
+    if obj == None:
+        Website_views.objects.create(views=1)
+    else:
+        total_views = Website_views.objects.first()
+        total_views.views = total_views.views + 1
+        total_views.save()
 
 
 def blog_delete(request, id):
@@ -117,6 +149,7 @@ def blog_create(request):
 
 
 def blog_list(request):
+    get_user_ip(request)
     # 从 url 中提取查询参数
     search = request.GET.get('search')
     order = request.GET.get('order')
@@ -164,6 +197,7 @@ def blog_list(request):
 
 
 def blog_detail(request, id):
+    get_user_ip(request)
     blog = Blog.objects.get(id=id)
     comments = Comment.objects.filter(blog=id)
     blog.total_views += 1
@@ -181,3 +215,13 @@ def blog_detail(request, id):
         'comment_form': comment_form,
     }
     return render(request, 'blog/detail.html', context)
+
+
+def user_stat(request):
+    total_views = Website_views.objects.first()
+    user_ip=view_ip.objects.all()
+    context={
+        'total_views':total_views,
+        'user_ips':user_ip,
+    }
+    return  render(request,'blog/userstat.html',context)
