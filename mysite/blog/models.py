@@ -60,7 +60,7 @@ class Blog(models.Model):
             'markdown.extensions.extra',
             'markdown.extensions.codehilite',
         ])
-        self.abstract = strip_tags(md.convert(self.body))[:400]
+        self.abstract = strip_tags(md.convert(self.body))[:200]
 
         blog = super(Blog, self).save(*args, **kwargs)
 
