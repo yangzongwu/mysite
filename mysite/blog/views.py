@@ -8,7 +8,7 @@ from django.http import HttpResponse
 
 from comment.forms import CommentForm
 from comment.models import Comment
-from .models import Blog, BlogClassify, Tag, Website_views, view_ip
+from .models import Blog, BlogClassify, Tag, Website_views, view_ip, view_ip_history
 from .forms import BlogPostForm,ClassifyAddForm
 from django.contrib.auth.models import User
 
@@ -51,10 +51,12 @@ def get_user_ip(request):
                 i.delete()
         if not view_ip.objects.filter(user_ip=user_ip):  # 判断当日用户是否已经访问过本网站
             view_ip.objects.create(user_ip=user_ip)  # 将用户IP存入数据库
+            view_ip_history.objects.create(user_ip=user_ip)
             total_views_add()  # 网站总访问量+1
     else:
         # print(user_ip)
         view_ip.objects.create(user_ip=user_ip)
+        view_ip_history.objects.create(user_ip=user_ip)
         total_views_add()
 
 
@@ -246,8 +248,10 @@ def blog_detail(request, id):
 def user_stat(request):
     total_views = Website_views.objects.first()
     user_ip = view_ip.objects.all()
+    view_ip_historys=view_ip_history.objects.all()
     context = {
         'total_views': total_views,
         'user_ips': user_ip,
+        'view_ip_historys':view_ip_historys,
     }
     return render(request, 'blog/userstat.html', context)

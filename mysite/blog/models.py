@@ -19,6 +19,11 @@ class view_ip(models.Model):
     user_ip = models.CharField(max_length=15, null=False)
     create_time = models.DateTimeField(auto_now_add=True)
 
+class view_ip_history(models.Model):
+    nid = models.AutoField(primary_key=True)
+    user_ip = models.CharField(max_length=15, null=False)
+    create_time = models.DateTimeField(auto_now_add=True)
+
 
 class BlogClassify(models.Model):
     title = models.CharField(max_length=100, blank=True)

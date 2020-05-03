@@ -5,9 +5,7 @@
 {% endblock title %}
 {% block content %}
 <div class="container">
-    <h3>Total viewers: {{total_views.views}}</h3>
-
-
+    <h3>Total Viewers: {{total_views.views}}</h3>
     <table class="table table-striped">
       <thead>
         <tr>
@@ -22,6 +20,26 @@
               <th scope="row">{{user_ip.nid}}</th>
               <td>{{user_ip.user_ip}}</td>
               <td>{{user_ip.create_time}}</td>
+            </tr>
+          {% endfor %}
+      </tbody>
+
+</table>
+    <h3>Total Viewers History:</h3>
+  <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">IP</th>
+          <th scope="col">Time</th>
+        </tr>
+      </thead>
+        {% for view_ip_history in view_ip_historys%}
+          <tbody>
+            <tr>
+              <th scope="row">{{view_ip_history.nid}}</th>
+              <td>{{view_ip_history.user_ip}}</td>
+              <td>{{view_ip_history.create_time}}</td>
             </tr>
           {% endfor %}
       </tbody>
