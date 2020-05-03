@@ -11,4 +11,6 @@ urlpatterns = [
     path('classify/<int:id>/', views.classify, name='classify'),
     path('tags/<int:id>/', views.tag, name='tag'),
     path('user_stat/',views.user_stat,name='user_stat'),
+    path('classify_add/',views.classify_add,name='classify_add'),
+
 ]

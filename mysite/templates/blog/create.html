@@ -13,7 +13,7 @@
                 <input type="text" class="form-control" id="title" name="title" size="80">
             </div>
             <div class="form-group">
-                <label for="classify">Classify</label>
+                <label for="classify">Classify(<a href="{% url 'blog:classify_add' %}">New</a>)</label>
                 <select class="form-control" id="classify" name="classify">
                     <option value="none">Please choose classify..</option>
                     {% for classify in classifies %}

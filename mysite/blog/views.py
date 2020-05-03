@@ -8,28 +8,53 @@ from django.http import HttpResponse
 
 from comment.forms import CommentForm
 from comment.models import Comment
-from .models import Blog, BlogClassify, Tag, Website_views,view_ip
-from .forms import BlogPostForm
+from .models import Blog, BlogClassify, Tag, Website_views, view_ip
+from .forms import BlogPostForm,ClassifyAddForm
 from django.contrib.auth.models import User
 
+
+def classify_add(request):
+    if request.method == 'POST':
+        classify_add_form = ClassifyAddForm(request.POST, request.FILES)
+        if classify_add_form.is_valid():
+            # commit=False保持数据，暂时不提交
+            new_classify = classify_add_form.save(commit=False)
+            new_add_classify=request.POST['new_classify']
+            all_classify=BlogClassify.objects.all()
+            claasify_list=[i.title for i in all_classify]
+            if new_add_classify not in claasify_list:
+                add_classify = BlogClassify(title=new_add_classify)
+                add_classify.save()
+                new_classify.save()
+                return redirect("blog:blog_list")
+            else:
+                return HttpResponse("already exist")
+        else:
+            return  HttpResponse("classify is not valid,please refill")
+    else:
+        classify_add_form = ClassifyAddForm()
+        classifies = BlogClassify.objects.all()
+        context = {'classify_add_form': classify_add_form, 'classifies': classifies,}
+        return render(request, 'blog/classify_add.html', context)
+
 def get_user_ip(request):
-    if 'HTTP_X_FORWARDED_FOR' in request.META:        # 获取用户真实IP地址
+    if 'HTTP_X_FORWARDED_FOR' in request.META:  # 获取用户真实IP地址
         user_ip = request.META['HTTP_X_FORWARDED_FOR']
     else:
         user_ip = request.META['REMOTE_ADDR']
     obj = view_ip.objects.first()
-    if not obj == None:                                # 判断数据表是否为空
+    if not obj == None:  # 判断数据表是否为空
         ct = obj.create_time
-        if not ct.month == datetime.datetime.now().month or not ct.day == datetime.datetime.now().day:      # 判断表中数据是否为当日访问
-            objs = view_ip.objects.all()         # 不是当日访问则迭代删除表中数据
+        if not ct.month == datetime.datetime.now().month or not ct.day == datetime.datetime.now().day:  # 判断表中数据是否为当日访问
+            objs = view_ip.objects.all()  # 不是当日访问则迭代删除表中数据
             for i in objs:
                 i.delete()
         if not view_ip.objects.filter(user_ip=user_ip):  # 判断当日用户是否已经访问过本网站
             view_ip.objects.create(user_ip=user_ip)  # 将用户IP存入数据库
-            total_views_add()                         # 网站总访问量+1
+            total_views_add()  # 网站总访问量+1
     else:
         # print(user_ip)
-        view_ip.objects.create(user_ip = user_ip)
+        view_ip.objects.create(user_ip=user_ip)
         total_views_add()
 
 
@@ -69,17 +94,18 @@ def blog_update(request, id):
             blog.tags.clear()
             if request.POST['tag'] != '':
                 curs = request.POST['tag'].split(',')
-                rep=set()
+                rep = set()
                 for obj in Tag.objects.all():
                     rep.add(obj.name)
                 for cur in curs:
-                    if not cur in rep:
+                    if cur != '' and not cur in rep:
                         rep.add(cur)
-                        new_tag = Tag(name = cur)
+                        new_tag = Tag(name=cur)
                         new_tag.save()
-                    addtag=Tag.objects.get(name=cur)
-                    blog.tags.add(addtag)
-                    blog.save()
+                    if cur:
+                        addtag = Tag.objects.get(name=cur)
+                        blog.tags.add(addtag)
+                        blog.save()
             blog.save()
 
             return redirect('blog:blog_detail', id=id)
@@ -88,12 +114,12 @@ def blog_update(request, id):
     else:
         blog_post_form = BlogPostForm()
         classifies = BlogClassify.objects.all()
-        cur_all_tags=blog.tags.all()
-        tags=''
+        cur_all_tags = blog.tags.all()
+        tags = ''
         for curtag in cur_all_tags:
-            tags+=str(curtag.name)+','
-        tags=tags[:-1]
-        context = {'blog': blog, 'blog_post_form': blog_post_form, 'classifies': classifies,'tags':tags }
+            tags += str(curtag.name) + ','
+        tags = tags[:-1]
+        context = {'blog': blog, 'blog_post_form': blog_post_form, 'classifies': classifies, 'tags': tags}
         return render(request, 'blog/update.html', context)
 
 
@@ -124,18 +150,18 @@ def blog_create(request):
 
             if request.POST['tag'] != 'none':
                 curs = request.POST['tag'].split(',')
-                rep=set()
+                rep = set()
                 for obj in Tag.objects.all():
                     rep.add(obj.name)
                 for cur in curs:
-                    if not cur in rep:
+                    if cur != '' and not cur in rep:
                         rep.add(cur)
-                        new_tag = Tag(name = cur)
+                        new_tag = Tag(name=cur)
                         new_tag.save()
-                    addtag=Tag.objects.get(name=cur)
-                    new_blog.tags.add(addtag)
-                    new_blog.save()
-
+                    if cur:
+                        addtag = Tag.objects.get(name=cur)
+                        new_blog.tags.add(addtag)
+                        new_blog.save()
 
             return redirect("blog:blog_list")
         else:
@@ -219,9 +245,9 @@ def blog_detail(request, id):
 
 def user_stat(request):
     total_views = Website_views.objects.first()
-    user_ip=view_ip.objects.all()
-    context={
-        'total_views':total_views,
-        'user_ips':user_ip,
+    user_ip = view_ip.objects.all()
+    context = {
+        'total_views': total_views,
+        'user_ips': user_ip,
     }
-    return  render(request,'blog/userstat.html',context)
+    return render(request, 'blog/userstat.html', context)
