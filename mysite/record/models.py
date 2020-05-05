@@ -13,4 +13,4 @@ class Todolist(models.Model):
     is_done = models.BooleanField(default=False)
 
     class Meta:
-        ordering = ('-created_time',)
+        ordering = ('-updated_time',)

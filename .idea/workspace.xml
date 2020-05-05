@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49ffeae1-b313-454d-bb48-7649f2c182c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mysite/blog/migrations/0012_auto_20200503_2214.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Github/leetcode/20200215Python-China/1038. Binary Search Tree to Greater Sum Tree.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Github/leetcode/20200215Python-China/1190. Reverse Substrings Between Each Pair of Parentheses.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Github/leetcode/20200215Python-China/1191. K-Concatenation Maximum Sum.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Github/leetcode/20200215Python-China/1209. Remove All Adjacent Duplicates in String II.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/record/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/record/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +24,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Github/leetcode" />
   </component>
   <component name="ProjectId" id="1Z75MK0ohrStzuf2OWJycHqkSjP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -165,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588505560518</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update">
+      <created>1588517584599</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1588517584599</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
