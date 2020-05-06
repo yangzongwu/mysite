@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49ffeae1-b313-454d-bb48-7649f2c182c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Github/leetcode/20200215Python-China/1038. Binary Search Tree to Greater Sum Tree.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Github/leetcode/20200215Python-China/1190. Reverse Substrings Between Each Pair of Parentheses.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Github/leetcode/20200215Python-China/1191. K-Concatenation Maximum Sum.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Github/leetcode/20200215Python-China/1209. Remove All Adjacent Duplicates in String II.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Github/leetcode/20200215Python-China/1208. Get Equal Substrings Within Budget.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Github/leetcode/20200215Python-China/1218. Longest Arithmetic Subsequence of Given Difference.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Github/leetcode/20200215Python-China/1219. Path with Maximum Gold.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/record/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/record/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -174,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588517584599</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="update">
+      <created>1588687965703</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1588687965703</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
