@@ -1,8 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49ffeae1-b313-454d-bb48-7649f2c182c6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Github/leetcode/20200215Python-China/1218. Longest Arithmetic Subsequence of Given Difference.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Github/leetcode/20200215Python-China/1218. Longest Arithmetic Subsequence of Given Difference.md" afterDir="false" />
+    <list default="true" id="49ffeae1-b313-454d-bb48-7649f2c182c6" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/../mynote/00 Python/01 变量与数据类型/Python 中的进制问题.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/00 Python/03 基本语句/import.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/00 Python/03 基本语句/print.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/00 Python/03 基本语句/赋值.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/00 Python/04 数据结构/set.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/00 Python/04 数据结构/元祖tuple.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/00 Python/04 数据结构/序列(sequence).md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/00 Python/05 函数/pizza.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/00 Python/08 测试代码/Test/0997. Find the Town Judge/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/00 Python/08 测试代码/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/00 Python/08 测试代码/测试函数/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/00 Python/09 python使用技巧/args and kwargs.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/00 Python/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/Reservoir Sampling 蓄水池采样算法.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/04 Django/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/04 Django/教程二/000 Virtual Environments.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/04 Django/教程二/001 first Project&amp;App.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/04 Django/教程二/002 map urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/04 Django/教程二/003 templates.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/04 Django/教程二/004 static.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/04 Django/教程二/005 models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/04 Django/教程二/006 Models-Templates-Views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/04 Django/教程二/007 forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/04 Django/教程二/008 templates2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/04 Django/教程二/009 built_in_tools.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/04 Django/教程二/Models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/04 Django/教程二/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/04 Django/教程二/URL/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/04 Django/教程二/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/04 Django/教程二/example/ProTwo/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/04 Django/教程二/example/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/04 Django/教程二/example/basicforms/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/04 Django/教程二/example/first_project/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/04 Django/教程二/example/learning_templates/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/04 Django/教程二/example/learning_users/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/04 Django/教程二/login/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/04 Django/教程二/view/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/Other/PC命令行.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/00 Python/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/00 Python/00 Python简介/简介.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/00 创建工程.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/00 创建工程.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/00 项目环境.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/00 项目环境.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/01 创建应用blog.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/01 创建应用blog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/02 展示文章列表.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/02 展示文章列表.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/03 展示博客详细信息.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/03 展示博客详细信息.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/04 发布新博客.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/04 发布新博客.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/05 修改博客.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/05 修改博客.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/06 删除博客.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/06 删除博客.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/07 用户登入登出.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/07 用户登入登出.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/08 用户注册.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/08 用户注册.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/09 删除用户.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/09 删除用户.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/10 用户重置密码.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/10 用户重置密码.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/11 扩展用户信息.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/11 扩展用户信息.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/12 上传用户头像.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/12 上传用户头像.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/13 文章列表分页.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/13 文章列表分页.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/14 文章阅读量统计.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/14 文章阅读量统计.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/15 文章排序.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/15 文章排序.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/16 搜索.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/16 搜索.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/17 文章目录.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/17 文章目录.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/18 Markdown语法.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/18 Markdown语法.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/19 文章分类与自定义模板.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/19 文章分类与自定义模板.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/20 文章标题图.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/20 文章标题图.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/21 发表评论.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/21 发表评论.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/22 富文本编辑器.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/22 富文本编辑器.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/23 回到顶部浮动按钮.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/23 回到顶部浮动按钮.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/24 矢量图标.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/24 矢量图标.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/25 消息通知.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/25 消息通知.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/04 Django/26 未读与已读.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/04 Django/学习笔记--搭建博客/26 未读与已读.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/06 python使用技巧/内置函数/自定义排序.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/00 Python/09 python使用技巧/内置函数/自定义排序.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,13 +81,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Github/leetcode" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../mynote" />
   </component>
   <component name="ProjectId" id="1Z75MK0ohrStzuf2OWJycHqkSjP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -34,12 +101,15 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\study\mysite\mysite\static\ckeditor\ckeditor\plugins" />
-      <recent name="D:\study\mysite\mysite\blog" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\study\mysite\mysite\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\study\mynote\00 Python" />
+      <recent name="D:\study\mynote\04 Django\学习笔记--搭建博客" />
+      <recent name="D:\study\mynote\04 Django\教程二" />
+      <recent name="D:\study\mysite\mysite\static\ckeditor\ckeditor\plugins" />
+      <recent name="D:\study\mysite\mysite\blog" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -205,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589248883996</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="update">
+      <created>1589249254353</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1589249254353</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
