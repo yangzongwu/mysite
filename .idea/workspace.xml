@@ -1,12 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49ffeae1-b313-454d-bb48-7649f2c182c6" name="Default Changelist" comment="">
+    <list default="true" id="49ffeae1-b313-454d-bb48-7649f2c182c6" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 字符串/0415. Add Strings.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 字符串/0434. Number of Segments in a String.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 字符串/0443. String Compression.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 字符串/0459. Repeated Substring Pattern.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 字符串/0520. Detect Capital.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 字符串/0521. Longest Uncommon Subsequence I.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 字符串/0541. Reverse String II.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 字符串/0551. Student Attendance Record I.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 字符串/0557. Reverse Words in a String III.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 字符串/0680. Valid Palindrome II.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 字符串/0686. Repeated String Match.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 字符串/0696. Count Binary Substrings.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 字符串/0788. Rotated Digits.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 字符串/0819. Most Common Word.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 字符串/0824. Goat Latin.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 字符串/0859. Buddy Strings.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 数组/0066. Plus One.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 数组/0118. Pascal's Triangle.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 数组/0119. Pascal's Triangle II.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 数组/0189. Rotate Array.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 数组/0219. Contains Duplicate II.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 数组/0414. Third Maximum Number.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 数组/0448. Find All Numbers Disappeared in an Array.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 数组/0485. Max Consecutive Ones.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 数组/0509. Fibonacci Number.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 数组/0561. Array Partition I.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/0007. Reverse Integer.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/0009. Palindrome Number.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/0172. Factorial Trailing Zeroes.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/0204. Count Primes.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/0258. Add Digits.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/0263. Ugly Number.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/0412. Fizz Buzz.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/0453. Minimum Moves to Equal Array Elements.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/0507. Perfect Number.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/0628. Maximum Product of Three Numbers.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/0633. Sum of Square Numbers.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/0645. Set Mismatch.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/18 Minimax/0292. Nim Game.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/.idea/mynote.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/.idea/mynote.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/mysite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mysite.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,15 +60,21 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Github/leetcode" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../mynote" />
   </component>
   <component name="ProjectId" id="1Z75MK0ohrStzuf2OWJycHqkSjP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ttsx" />
     <property name="settings.editor.selected.configurable" value="configurable.group.project" />
@@ -46,17 +91,71 @@
       <recent name="D:\study\mysite\mysite\blog" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="APP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="APP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="APP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <module name="APP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -245,13 +344,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -260,5 +358,11 @@
     <MESSAGE value="blog update" />
     <MESSAGE value="update" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="587" y="-983" key="CommitChangelistDialog2" timestamp="1594080064420">
+      <screen x="0" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="587" y="-983" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594080064420" />
   </component>
 </project>
