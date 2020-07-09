@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49ffeae1-b313-454d-bb48-7649f2c182c6" name="Default Changelist" comment="20200707">
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/09 栈与队列/1441. Build an Array With Stack Operations.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 字符串/1408. String Matching in an Array.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 字符串/1417. Reformat The String.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 字符串/1422. Maximum Score After Splitting a String.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 字符串/1446. Consecutive Characters.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 字符串/1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 字符串/1496. Path Crossing.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 数组/1385. Find the Distance Value Between Two Arrays.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-1 矩阵/1394. Find Lucky Integer in an Array.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-1 矩阵/1413. Minimum Value to Get Positive Step by Step Sum.md" afterDir="false" />
+    <list default="true" id="49ffeae1-b313-454d-bb48-7649f2c182c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/09 栈与队列/0682. Baseball Game.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/10 Hash Table  哈希表/0575. Distribute Candies.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/10 Hash Table  哈希表/0599. Minimum Index Sum of Two Lists.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/10 Hash Table  哈希表/0690. Employee Importance.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 字符串/0482. License Key Formatting.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 数组/0506. Relative Ranks.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 数组/0605. Can Place Flowers.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 数组/0643. Maximum Average Subarray I.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 数组/0697. Degree of an Array.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 数组/0717. 1-bit and 2-bit Characters.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 数组/1399. Count Largest Group.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-1 矩阵/0566. Reshape the Matrix.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-1 矩阵/0598. Range Addition II.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-1 矩阵/0661. Image Smoother.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/16 位运算/0371. Sum of Two Integers.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/16 位运算/0405. Convert a Number to Hexadecimal.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/0168. Excel Sheet Column Title.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/0171. Excel Sheet Column Number.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/0492. Construct the Rectangle.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/0504. Base 7.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,15 +58,15 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.project" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\study\mysite\mysite\templates" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\study\mynote\01 Algorithm\12-0 数组" />
       <recent name="D:\study\mynote\00 Python" />
       <recent name="D:\study\mynote\04 Django\学习笔记--搭建博客" />
       <recent name="D:\study\mynote\04 Django\教程二" />
       <recent name="D:\study\mysite\mysite\static\ckeditor\ckeditor\plugins" />
-      <recent name="D:\study\mysite\mysite\blog" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\study\mysite\mysite\templates" />
     </key>
   </component>
   <component name="RunManager">
@@ -318,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594132839018</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="20200707">
+      <created>1594173905565</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1594173905565</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -343,13 +360,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="20200707" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="587" y="-983" key="CommitChangelistDialog2" timestamp="1594167627070">
+    <state x="587" y="-983" key="CommitChangelistDialog2" timestamp="1594173903551">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="587" y="-983" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594167627070" />
-    <state x="552" y="-828" key="Vcs.Push.Dialog.v2" timestamp="1594167621764">
+    <state x="587" y="-983" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594173903551" />
+    <state x="552" y="-828" key="Vcs.Push.Dialog.v2" timestamp="1594173925012">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="552" y="-828" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594167621764" />
+    <state x="552" y="-828" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594173925012" />
   </component>
 </project>
