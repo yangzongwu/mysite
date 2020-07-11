@@ -1,18 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:mysite" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="49ffeae1-b313-454d-bb48-7649f2c182c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/07 Dynamic Programming/1137. N-th Tribonacci Number.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/10 Hash Table  哈希表/0953. Verifying an Alien Dictionary.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/10 Hash Table  哈希表/1010. Pairs of Songs With Total Durations Divisible by 60 .md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 String 字符串/0929. Unique Email Addresses.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 Array 数组/0941. Valid Mountain Array.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 Array 数组/1013. Partition Array Into Three Parts With Equal Sum.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/16 Bit Manipulation 位运算/1018. Binary Prefix Divisible By 5.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/0949. Largest Time for Given Digits.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/0970. Powerful Integers.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/1037. Valid Boomerang.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/19 Brainteaser 脑筋急转弯/1033. Moving Stones Until Consecutive.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/10 Hash Table  哈希表/1160. Find Words That Can Be Formed by Characters.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 Array 数组/1185. Day of the Week.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-1 Array 矩阵/1128. Number of Equivalent Domino Pairs.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/1154. Day of the Year.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -354,7 +386,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594456119394</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="20200711">
+      <created>1594469882739</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1594469882740</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -382,15 +421,15 @@
     <option name="LAST_COMMIT_MESSAGE" value="20200711" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="587" y="-983" key="CommitChangelistDialog2" timestamp="1594456116488">
+    <state x="587" y="-983" key="CommitChangelistDialog2" timestamp="1594469880282">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="587" y="-983" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594456116488" />
+    <state x="587" y="-983" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594469880282" />
     <state x="418" y="0" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1594393189865" />
-    <state x="552" y="-828" key="Vcs.Push.Dialog.v2" timestamp="1594456123264">
+    <state x="552" y="-828" key="Vcs.Push.Dialog.v2" timestamp="1594469888218">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="552" y="-828" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594456123264" />
+    <state x="552" y="-828" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594469888218" />
     <state x="393" y="176" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1594393199067" />
   </component>
 </project>
