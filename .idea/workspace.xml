@@ -40,21 +40,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49ffeae1-b313-454d-bb48-7649f2c182c6" name="Default Changelist" comment="完善分页功能和搜索功能">
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/02 Greedy 贪心思想/0944. Delete Columns to Make Sorted.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/09 栈与队列/0225. Implement Stack using Queues.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/09 栈与队列/0232. Implement Queue using Stacks.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/10 Hash Table  哈希表/0705. Design HashSet.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/10 Hash Table  哈希表/0706. Design HashMap.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 String 字符串/1078. Occurrences After Bigram.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 Array 数组/0849. Maximize Distance to Closest Person.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-1 Array 矩阵/0840. Magic Squares In Grid.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-1 Array 矩阵/0867. Transpose Matrix.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-1 Array 矩阵/1051. Height Checker.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/0812. Largest Triangle Area.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/0976. Largest Perimeter Triangle.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/1103. Distribute Candies to People.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/1232. Check If It Is a Straight Line.md" afterDir="false" />
+    <list default="true" id="49ffeae1-b313-454d-bb48-7649f2c182c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-1 Array 矩阵/0892. Surface Area of 3D Shapes.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/16 Bit Manipulation 位运算/0868. Binary Gap.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/Heap 堆/0703. Kth Largest Element in a Stream.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -432,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594541817103</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="20200712">
+      <created>1594564404835</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1594564404835</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -457,20 +453,20 @@
     <MESSAGE value="20200709" />
     <MESSAGE value="20200710" />
     <MESSAGE value="20200711" />
-    <MESSAGE value="20200712" />
     <MESSAGE value="完善分页功能和搜索功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善分页功能和搜索功能" />
+    <MESSAGE value="20200712" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200712" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="587" y="-983" key="CommitChangelistDialog2" timestamp="1594560169942">
+    <state x="587" y="-983" key="CommitChangelistDialog2" timestamp="1594564402579">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="587" y="-983" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594560169942" />
+    <state x="587" y="-983" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594564402579" />
     <state x="418" y="0" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1594393189865" />
-    <state x="552" y="-828" key="Vcs.Push.Dialog.v2" timestamp="1594541823981">
+    <state x="552" y="-828" key="Vcs.Push.Dialog.v2" timestamp="1594564507347">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="552" y="-828" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594541823981" />
+    <state x="552" y="-828" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594564507347" />
     <state x="393" y="176" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1594393199067" />
   </component>
 </project>
