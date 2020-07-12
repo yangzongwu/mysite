@@ -11,7 +11,6 @@ from .forms import CommentForm
 @login_required(login_url='/user/login/')
 def post_comment(request, id):
     blog = get_object_or_404(Blog, id=id)
-    print(id)
     # 处理 POST 请求
     if request.method == 'POST':
         comment_form = CommentForm(request.POST)

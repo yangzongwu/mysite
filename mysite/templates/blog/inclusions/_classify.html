@@ -3,7 +3,7 @@
   <ul>
     {% for classify in classify_list %}
       <li>
-        <a href="{% url 'blog:classify' classify.id %}">{{ classify.title }}<span class="post-count">({{ classify.num_posts }})</span></a>
+        <a href="{% url 'blog:blog_list' %}?classify={{ classify.id }}">{{ classify.title }}<span class="post-count">({{ classify.num_posts }})</span></a>
       </li>
     {% empty %}
       暂无分类！

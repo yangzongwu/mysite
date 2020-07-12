@@ -129,14 +129,14 @@ def tag(request, id):
     # 记得在开始部分导入 Tag 类
     t = get_object_or_404(Tag, id=id)
     blogs = Blog.objects.filter(tags=id).order_by('-created_time')
-    return render(request, 'blog/list.html', context={'blogs': blogs, "order": "", "search": ""})
+    return render(request, 'blog/list.html', context={'blogs': blogs, "order": "", "search": "","tag":id,"classify":""})
 
 
 def classify(request, id):
     # 记得在开始部分导入 Tag 类
     t = get_object_or_404(BlogClassify, id=id)
     blogs = Blog.objects.filter(classify=t).order_by('-created_time')
-    return render(request, 'blog/list.html', context={'blogs': blogs, "order": "", "search": ""})
+    return render(request, 'blog/list.html', context={'blogs': blogs, "order": "", "search": "","classify":id,"tag":""})
 
 
 def blog_create(request):
@@ -179,13 +179,24 @@ def blog_create(request):
 def blog_list(request):
     get_user_ip(request)
     # 从 url 中提取查询参数
-    search = request.GET.get('search')
+    search = request.POST.get('search')
     order = request.GET.get('order')
     classify = request.GET.get('classify')
     tag = request.GET.get('tag')
 
+    print(classify,tag, order,search)
+
     # 初始化查询集
     blog_list = Blog.objects.all()
+
+
+    # 栏目查询集
+    if classify is not None and classify.isdigit():
+        blog_list = blog_list.filter(classify=classify)
+
+    # 标签查询集
+    if tag and tag != 'None':
+        blog_list = blog_list.filter(tags=tag)
 
     # 搜索查询集
     if search:
@@ -195,15 +206,6 @@ def blog_list(request):
         )
     else:
         search = ''
-
-    # 栏目查询集
-    if classify is not None and classify.isdigit():
-        blog_list = blog_list.filter(classify=classify)
-
-    # 标签查询集
-    if tag and tag != 'None':
-        blog_list = blog_list.filter(tags__name__in=[tag])
-
     # 查询集排序
     if order == 'total_views':
         blog_list = blog_list.order_by('-total_views')
@@ -228,7 +230,8 @@ def blog_detail(request, id):
     get_user_ip(request)
     blog = Blog.objects.get(id=id)
     comments = Comment.objects.filter(blog=id)
-    blog.total_views += 1
+    if request.user != blog.author:
+        blog.total_views += 1
     blog.save(update_fields=['total_views'])
 
     md = markdown.Markdown(extensions=[

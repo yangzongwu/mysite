@@ -9,18 +9,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="breadcrumb-item">
-                    <a href="{% url 'blog:blog_list' %}?search={{ search }}">
+                    <a href="{% url 'blog:blog_list' %}?search={{ search }}&classify={{ classify }}&tag={{ tag }}">
                         最新
                     </a>
                 </li>
                 <li class="breadcrumb-item">
-                    <a href="{% url 'blog:blog_list' %}?order=total_views&search={{ search }}">
+                    <a href="{% url 'blog:blog_list' %}?order=total_views&search={{ search }}&classify={{ classify }}&tag={{ tag }}">
                     最热
                     </a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input type="search"
+            <form class="form-inline my-2 my-lg-0" action="{% url 'blog:blog_list' %}?order={{order}}&classify={{ classify }}&tag={{ tag }}" method="POST">
+              {%csrf_token%}
+                <input type="search"
                     class="form-control mr-sm-2"
                     name="search"
                     placeholder="search..."
@@ -74,11 +75,11 @@
         <span class="step-links">
             <!-- 如果不是第一页，则显示上翻按钮 -->
             {% if blogs.has_previous %}
-                <a href="?page=1&order={{ order }}&search={{ search }}" class="btn btn-success">
+                <a href="?page=1&order={{ order }}&search={{ search }}&classify={{ classify }}&tag={{ tag }}" class="btn btn-success">
                     &laquo; 1
                 </a>
                 <span>...</span>
-                <a href="?page={{ blogs.previous_page_number }}&order={{ order }}&search={{ search }}"
+                <a href="?page={{ blogs.previous_page_number }}&order={{ order }}&search={{ search }}&classify={{ classify }}&tag={{ tag }}"
                    class="btn btn-secondary"
                 >
                     {{ blogs.previous_page_number }}
@@ -92,13 +93,13 @@
 
             <!-- 如果不是最末页，则显示下翻按钮 -->
             {% if blogs.has_next %}
-                <a href="?page={{ blogs.next_page_number }}&order={{ order }}&search={{ search }}"
+                <a href="?page={{ blogs.next_page_number }}&order={{ order }}&search={{ search }}&classify={{ classify }}&tag={{ tag }}"
                    class="btn btn-secondary"
                 >
                     {{ blogs.next_page_number }}
                 </a>
                 <span>...</span>
-                <a href="?page={{ blogs.paginator.num_pages }}&order={{ order }}&search={{ search }}"
+                <a href="?page={{ blogs.paginator.num_pages }}&order={{ order }}&search={{ search }}&classify={{ classify }}&tag={{ tag }}"
                    class="btn btn-success"
                 >
                     {{ blogs.paginator.num_pages }} &raquo;
