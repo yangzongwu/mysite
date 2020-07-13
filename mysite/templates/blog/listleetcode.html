@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}
+    首页
+{% endblock title %}
+{% block content %}
+    <div>
+            <div>
+                <p><b>Level:</b></p>
+                <button type="button" class="btn btn-light ">
+                    <a href="{% url 'blog:blog_list_leetcode' %}?search={{ search }}&datastructure={{ datastructure }}&algorithm={{ algorithm }}">All</a>
+                </button>
+                {% for difficulty in blog_difficulty %}
+                {% if difficulty.title == 'Easy' %}
+                <button type="button" class="btn btn-light ">
+                    <a href="{% url 'blog:blog_list_leetcode' %}?search={{ search }}&difficulty={{ difficulty.id }}&datastructure={{ datastructure }}&algorithm={{ algorithm }}">{{ difficulty.title }}</a>
+                </button>
+                {% elif difficulty.title == 'Medium' %}
+                <button type="button" class="btn btn-warning ">
+                    <a href="{% url 'blog:blog_list_leetcode' %}?search={{ search }}&difficulty={{ difficulty.id }}&datastructure={{ datastructure }}&algorithm={{ algorithm }}">{{ difficulty.title }}</a>
+                </button>
+                {% else %}
+                <button type="button" class="btn btn-danger ">
+                    <a href="{% url 'blog:blog_list_leetcode' %}?search={{ search }}&difficulty={{ difficulty.id }}&datastructure={{ datastructure }}&algorithm={{ algorithm }}">{{ difficulty.title }}</a>
+                </button>
+                {% endif %}
+                {% endfor %}
+            </div>
+
+              <div>
+                  <p><b>Data Structure:</b></p>
+                  <button type="button" class="btn btn-outline-secondary">
+                    <a href="{% url 'blog:blog_list_leetcode' %}?search={{ search }}&difficulty={{ difficulty }}&algorithm={{ algorithm }}">All</a>
+                  </button>
+                {% for datastructure in blog_DataStructure %}
+                <button type="button" class="btn btn-outline-secondary">
+                    <a href="{% url 'blog:blog_list_leetcode' %}?search={{ search }}&difficulty={{ difficulty }}&datastructure={{ datastructure.id }}&algorithm={{ algorithm }}">{{ datastructure.title }}</a>
+                  </button>
+                    {% endfor %}
+              </div>
+        <div>
+                  <p><b>Algorithm:</b></p>
+            <button type="button" class="btn btn-outline-secondary">
+                    <a href="{% url 'blog:blog_list_leetcode' %}?search={{ search }}&difficulty={{ difficulty }}&datastructure={{ datastructure }}">ALL</a>
+                  </button>
+                {% for algorithm in blog_Algorithm %}
+                <button type="button" class="btn btn-outline-secondary">
+                    <a href="{% url 'blog:blog_list_leetcode' %}?search={{ search }}&difficulty={{ difficulty }}&datastructure={{ datastructure }}&algorithm={{ algorithm.id }}">{{ algorithm.title }}</a>
+                  </button>
+                    {% endfor %}
+              </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="breadcrumb-item">
+                    <a href="{% url 'blog:blog_list_leetcode' %}?search={{ search }}&difficulty={{ difficulty }}&datastructure={{ datastructure }}&algorithm={{ algorithm }}">
+                        最新
+                    </a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="{% url 'blog:blog_list_leetcode' %}?order=total_views&search={{ search }}&difficulty={{ difficulty }}&datastructure={{ datastructure }}&algorithm={{ algorithm }}">
+                    最热
+                    </a>
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0" action="{% url 'blog:blog_list_leetcode' %}?order={{order}}&difficulty={{ difficulty }}&datastructrue={{ datastructrue }}&algorithm={{ algorithm }}" method="POST">
+              {%csrf_token%}
+                <input type="search"
+                    class="form-control mr-sm-2"
+                    name="search"
+                    placeholder="search..."
+                    required
+                >
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+    </div>
+    {% if search %}
+        {% if blogs %}
+            <h4><span style="color: red">"{{ search }}"</span>的搜索结果如下：</h4>
+            <hr>
+        {% else %}
+            <h4>暂无<span style="color: red">"{{ search }}"</span>有关的文章。</h4>
+            <hr>
+        {% endif %}
+    {% endif %}
+
+    {% for blog in blogs %}
+    {% if blog.avatar %}
+            <div class="col-3">
+                <img src="{{ blog.avatar.url }}"
+                     alt="avatar"
+                     style="max-width:100%; border-radius: 20px"
+                >
+            </div>
+        {% endif %}
+
+    {% if blog.classify %}
+        {{ blog.classify }}
+    {% endif %}
+
+    {% for tag in blog.tags.all %}
+        <a href="#" class="badge badge-secondary">
+            {{ tag.name }}
+        </a>
+    {% endfor %}
+
+    <h3><a href="{% url 'blog:blog_detail' blog.id %}">{{blog.title}}</a></h3>
+        <small class="" style="color: gray;"><i class="fas fa-eye" style="color: lightskyblue;"></i>{{ blog.total_views }}&nbsp;author: {{ blog.author }},
+            发布日期 {{blog.created_time|date:'Y-m-d'}},最近修改 {{blog.updated_time|date:'Y-m-d'}}</small>
+        <p><small class="text-wrap" style="word-wrap: break-word; color: gray;">{{blog.abstract}}</small></p>
+    {% endfor %}
+
+
+<!-- 页码导航 -->
+<div class="pagination row">
+    <div class="m-auto">
+        <span class="step-links">
+            <!-- 如果不是第一页，则显示上翻按钮 -->
+            {% if blogs.has_previous %}
+                <a href="?page=1&order={{ order }}&search={{ search }}&difficulty={{ difficulty }}&datastructrue={{ datastructrue }}&algorithm={{ algorithm }}" class="btn btn-success">
+                    &laquo; 1
+                </a>
+                <span>...</span>
+                <a href="?page={{ blogs.previous_page_number }}&order={{ order }}&search={{ search }}&difficulty={{ difficulty }}&datastructrue={{ datastructrue }}&algorithm={{ algorithm }}"
+                   class="btn btn-secondary"
+                >
+                    {{ blogs.previous_page_number }}
+                </a>
+            {% endif %}
+
+            <!-- 当前页面 -->
+            <span class="current btn btn-danger btn-lg">
+                {{ blogs.number }}
+            </span>
+
+            <!-- 如果不是最末页，则显示下翻按钮 -->
+            {% if blogs.has_next %}
+                <a href="?page={{ blogs.next_page_number }}&order={{ order }}&search={{ search }}&difficulty={{ difficulty }}&datastructrue={{ datastructrue }}&algorithm={{ algorithm }}"
+                   class="btn btn-secondary"
+                >
+                    {{ blogs.next_page_number }}
+                </a>
+                <span>...</span>
+                <a href="?page={{ blogs.paginator.num_pages }}&order={{ order }}&search={{ search }}&difficulty={{ difficulty }}&datastructrue={{ datastructrue }}&algorithm={{ algorithm }}"
+                   class="btn btn-success"
+                >
+                    {{ blogs.paginator.num_pages }} &raquo;
+                </a>
+            {% endif %}
+        </span>
+    </div>
+</div>
+
+{% endblock content %}

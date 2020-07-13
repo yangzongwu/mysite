@@ -8,8 +8,9 @@ from django.http import HttpResponse
 
 from comment.forms import CommentForm
 from comment.models import Comment
-from .models import Blog, BlogClassify, Tag, Website_views, view_ip, view_ip_history
-from .forms import BlogPostForm,ClassifyAddForm
+from .models import Blog, BlogClassify, Tag, Website_views, view_ip, view_ip_history,\
+    BlogDifficulty,BlogClassifyDataStructure,BlogAlgorithm
+from .forms import BlogPostForm,ClassifyAddForm,BlogDifficultyAddForm,BlogClassifyDataStructureAddForm,BlogAlgorithmAddForm
 from django.contrib.auth.models import User
 
 
@@ -36,6 +37,79 @@ def classify_add(request):
         classifies = BlogClassify.objects.all()
         context = {'classify_add_form': classify_add_form, 'classifies': classifies,}
         return render(request, 'blog/classify_add.html', context)
+
+def difficulty_add(request):
+    if request.method == 'POST':
+        new_difficulty_add_form = BlogDifficultyAddForm(request.POST, request.FILES)
+        if new_difficulty_add_form.is_valid():
+            # commit=False保持数据，暂时不提交
+            new_difficulty = new_difficulty_add_form.save(commit=False)
+            new_add_difficulty=request.POST['new_difficulty']
+            all_difficulty=BlogDifficulty.objects.all()
+            difficulty_list=[i.title for i in all_difficulty]
+            if new_add_difficulty not in difficulty_list:
+                add_difficulty = BlogDifficulty(title=new_add_difficulty)
+                add_difficulty.save()
+                #new_difficulty.save()
+                return redirect("blog:blog_list_leetcode")
+            else:
+                return HttpResponse("already exist")
+
+        else:
+            return  HttpResponse("difficulty is not valid,please refill")
+    else:
+        difficulty_add_form = BlogDifficultyAddForm()
+        difficulties = BlogDifficulty.objects.all()
+        context = {'difficulty_add_form': difficulty_add_form, 'difficulties': difficulties,}
+        return render(request, 'blog/difficulty_add.html', context)
+
+def datastructrue_add(request):
+    if request.method == 'POST':
+        datastructure_add_form = BlogClassifyDataStructureAddForm(request.POST, request.FILES)
+        if datastructure_add_form.is_valid():
+            # commit=False保持数据，暂时不提交
+            new_datastructure = datastructure_add_form.save(commit=False)
+            new_add_datastructure=request.POST['new_datastructure']
+            all_datastructure=BlogClassifyDataStructure.objects.all()
+            datastructrue_list=[i.title for i in all_datastructure]
+            if new_add_datastructure not in datastructrue_list:
+                add_datastructure = BlogClassifyDataStructure(title=new_add_datastructure)
+                add_datastructure.save()
+                #new_datastructure.save()
+                return redirect("blog:blog_list_leetcode")
+            else:
+                return HttpResponse("already exist")
+        else:
+            return  HttpResponse("datastructure is not valid,please refill")
+    else:
+        datastructrue_add_form = ClassifyAddForm()
+        datastructures = BlogClassifyDataStructure.objects.all()
+        context = {'classify_add_form': datastructrue_add_form, 'datastructures': datastructures,}
+        return render(request, 'blog/datastructure_add.html', context)
+
+def algorithm_add(request):
+    if request.method == 'POST':
+        algorithm_add_form = BlogAlgorithmAddForm(request.POST, request.FILES)
+        if algorithm_add_form.is_valid():
+            # commit=False保持数据，暂时不提交
+            new_algorithm = algorithm_add_form.save(commit=False)
+            new_add_algorithm=request.POST['new_algorithm']
+            all_algorithm=BlogAlgorithm.objects.all()
+            algorithm_list=[i.title for i in all_algorithm]
+            if new_add_algorithm not in algorithm_list:
+                add_algorithm = BlogAlgorithm(title=new_add_algorithm)
+                add_algorithm.save()
+                #new_algorithm.save()
+                return redirect("blog:blog_list_leetcode")
+            else:
+                return HttpResponse("already exist")
+        else:
+            return  HttpResponse("algorithm is not valid,please refill")
+    else:
+        algorithm_add_form = BlogAlgorithmAddForm()
+        algorithms = BlogAlgorithm.objects.all()
+        context = {'algorithm_add_form': algorithm_add_form, 'algorithms': algorithms,}
+        return render(request, 'blog/algorithm_add.html', context)
 
 def get_user_ip(request):
     if 'HTTP_X_FORWARDED_FOR' in request.META:  # 获取用户真实IP地址
@@ -88,42 +162,64 @@ def blog_update(request, id):
         if blog_post_form.is_valid():
             blog.title = request.POST['title']
             blog.body = request.POST['body']
-            if request.POST['classify'] != 'none':
+            if request.POST['classify'] and request.POST['classify']!= 'none':
                 blog.classify = BlogClassify.objects.get(id=request.POST['classify'])
             else:
                 blog.classify = None
 
-            blog.tags.clear()
-            if request.POST['tag'] != '':
-                curs = request.POST['tag'].split(',')
-                rep = set()
-                for obj in Tag.objects.all():
-                    rep.add(obj.name)
-                for cur in curs:
-                    if cur != '' and not cur in rep:
-                        rep.add(cur)
-                        new_tag = Tag(name=cur)
-                        new_tag.save()
-                    if cur:
-                        addtag = Tag.objects.get(name=cur)
-                        blog.tags.add(addtag)
-                        blog.save()
+            if blog.classify.title == 'leetcode':
+                if request.POST['difficulty'] and request.POST['difficulty']!= 'none':
+                    blog.difficulty = BlogDifficulty.objects.get(id=request.POST['difficulty'])
+                else:
+                    blog.difficulty = None
+                if request.POST['structure'] and request.POST['structure']!= 'none':
+                    blog.structure = BlogClassifyDataStructure.objects.get(id=request.POST['structure'])
+                else:
+                    blog.structure = None
+                if request.POST['algorithm'] and request.POST['algorithm']!= 'none':
+                    blog.algorithm = BlogAlgorithm.objects.get(id=request.POST['algorithm'])
+                else:
+                    blog.algorithm = None
+            else:
+                blog.tags.clear()
+                if request.POST['tag'] and request.POST['tag'] != '':
+                    curs = request.POST['tag'].split(',')
+                    rep = set()
+                    for obj in Tag.objects.all():
+                        rep.add(obj.name)
+                    for cur in curs:
+                        if cur != '' and not cur in rep:
+                            rep.add(cur)
+                            new_tag = Tag(name=cur)
+                            new_tag.save()
+                        if cur:
+                            addtag = Tag.objects.get(name=cur)
+                            blog.tags.add(addtag)
+                            blog.save()
             blog.save()
 
             return redirect('blog:blog_detail', id=id)
         else:
             return HttpResponse("表单有问题")
     else:
-        blog_post_form = BlogPostForm()
-        classifies = BlogClassify.objects.all()
-        cur_all_tags = blog.tags.all()
-        tags = ''
-        for curtag in cur_all_tags:
-            tags += str(curtag.name) + ','
-        tags = tags[:-1]
-        context = {'blog': blog, 'blog_post_form': blog_post_form, 'classifies': classifies, 'tags': tags}
-        return render(request, 'blog/update.html', context)
-
+        if blog.classify.title!='leetcode':
+            blog_post_form = BlogPostForm()
+            classifies = BlogClassify.objects.all()
+            cur_all_tags = blog.tags.all()
+            tags = ''
+            for curtag in cur_all_tags:
+                tags += str(curtag.name) + ','
+            tags = tags[:-1]
+            context = {'blog': blog, 'blog_post_form': blog_post_form, 'classifies': classifies, 'tags': tags}
+            return render(request, 'blog/update.html', context)
+        else:
+            blog_post_form = BlogPostForm()
+            difficulty = BlogDifficulty.objects.all()
+            structure = BlogClassifyDataStructure.objects.all()
+            classifies = BlogClassify.objects.all()
+            algorithm = BlogAlgorithm.objects.all()
+            context = {'blog': blog, 'blog_post_form': blog_post_form, 'classifies': classifies,'difficulty': difficulty, 'structure': structure,'algorithm':algorithm}
+            return render(request, 'blog/updateleetcode.html', context)
 
 def tag(request, id):
     # 记得在开始部分导入 Tag 类
@@ -175,6 +271,97 @@ def blog_create(request):
         context = {'blog_post_form': blog_post_form, 'classifies': classifies, 'tags': tags}
         return render(request, 'blog/create.html', context)
 
+def blog_create_leetcode(request):
+    if request.method == 'POST':
+        blog_post_form = BlogPostForm(request.POST, request.FILES)
+        if blog_post_form.is_valid():
+            # commit=False保持数据，暂时不提交
+            new_blog = blog_post_form.save(commit=False)
+            new_blog.author = User.objects.get(id=request.user.id)
+            if request.POST['difficulty'] != 'none':
+                new_blog.difficulty = BlogDifficulty.objects.get(id=request.POST['difficulty'])
+            new_blog.save()
+            if request.POST['datastructrue'] != 'none':
+                new_blog.datastructrue = BlogClassifyDataStructure.objects.get(id=request.POST['datastructrue'])
+            new_blog.save()
+            if request.POST['algorithm'] != 'none':
+                new_blog.algorithm = BlogAlgorithm.objects.get(id=request.POST['algorithm'])
+            new_blog.save()
+            new_blog.classify = BlogClassify.objects.get(title='leetcode')
+            new_blog.save()
+
+
+            return redirect("blog:blog_list_leetcode")
+        else:
+            return HttpResponse("表单内容有误，请重新填写")
+    else:
+        blog_post_form = BlogPostForm()
+        difficulty = BlogDifficulty.objects.all()
+        datastructrue = BlogClassifyDataStructure.objects.all()
+        algorithm = BlogAlgorithm.objects.all()
+        context = {'blog_post_form': blog_post_form, 'difficulty': difficulty, 'datastructrue': datastructrue,'algorithm':algorithm}
+        return render(request, 'blog/create_leetcode.html', context)
+
+
+def blog_list_leetcode(request):
+    get_user_ip(request)
+    # 从 url 中提取查询参数
+    search = request.POST.get('search')
+    order = request.GET.get('order')
+    difficulty=request.GET.get('difficulty')
+    datastructure=request.GET.get('datastructure')
+    algorithm=request.GET.get('algorithm')
+
+    blog_difficulty=BlogDifficulty.objects.all()
+    blog_DataStructure=BlogClassifyDataStructure.objects.all()
+    blog_Algorithm=BlogAlgorithm.objects.all()
+    # 初始化查询集
+
+    classify = BlogClassify.objects.get(title='leetcode')
+
+    blog_list= Blog.objects.all()
+    blog_list = blog_list.filter(classify=classify)
+
+    # 栏目查询集
+    if difficulty and difficulty!='None':
+        blog_list = blog_list.filter(difficulty=difficulty)
+
+    if datastructure and datastructure!='None':
+        blog_list = blog_list.filter(datastructrue=datastructure)
+
+    if algorithm and algorithm!='None':
+        blog_list = blog_list.filter(algorithm=algorithm)
+    # 搜索查询集
+    if search:
+        blog_list = blog_list.filter(
+            Q(title__icontains=search) |
+            Q(body__icontains=search)
+        )
+    else:
+        search = ''
+    # 查询集排序
+    if order == 'total_views':
+        blog_list = blog_list.order_by('-total_views')
+
+    paginator = Paginator(blog_list, 5)
+    page = request.GET.get('page')
+    blogs = paginator.get_page(page)
+
+    # 需要传递给模板（templates）的对象
+    context = {
+        'blogs': blogs,
+        'order': order,
+        'search': search,
+        'difficulty':difficulty,
+        'datastructure':datastructure,
+        'algorithm':algorithm,
+        'blog_difficulty':blog_difficulty,
+        'blog_DataStructure':blog_DataStructure,
+        'blog_Algorithm':blog_Algorithm
+    }
+
+    return render(request, 'blog/listleetcode.html', context)
+
 
 def blog_list(request):
     get_user_ip(request)
@@ -184,11 +371,8 @@ def blog_list(request):
     classify = request.GET.get('classify')
     tag = request.GET.get('tag')
 
-    print(classify,tag, order,search)
-
     # 初始化查询集
     blog_list = Blog.objects.all()
-
 
     # 栏目查询集
     if classify is not None and classify.isdigit():

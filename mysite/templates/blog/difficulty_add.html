@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}
+    首页
+{% endblock title %}
+{% block content %}
+<div class="container">
+    <div>
+        <form method="post" action="" enctype="multipart/form-data">
+        {% csrf_token %}
+            <div class="form-group">
+                <label for="new_difficulty">difficulty</label>
+                    <input class="form-control" type="text" id="new_difficulty" name="new_difficulty" placeholder="please add new difficulty">
+            </div>
+
+            <div class="form-group">
+                {% for difficulty in difficulties %}
+                <p>{{difficulty.title}}</p>
+                {% endfor %}
+            </div>
+
+            <button type="submit">Publish</button>
+    </form>
+    </div>
+</div>
+
+{% endblock content %}

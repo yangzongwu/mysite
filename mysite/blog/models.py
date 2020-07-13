@@ -38,6 +38,27 @@ class Tag(models.Model):
     def _str__(self):
         return self.name
 
+class BlogDifficulty(models.Model):
+    title = models.CharField(max_length=100, blank=True)
+    created = models.DateTimeField(default=timezone.now)
+
+    def __str__(self):
+        return self.title
+
+class BlogClassifyDataStructure(models.Model):
+    title = models.CharField(max_length=100, blank=True)
+    created = models.DateTimeField(default=timezone.now)
+
+    def __str__(self):
+        return self.title
+
+class BlogAlgorithm(models.Model):
+    title = models.CharField(max_length=100, blank=True)
+    created = models.DateTimeField(default=timezone.now)
+
+    def __str__(self):
+        return self.title
+
 class Blog(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=100)
@@ -51,6 +72,9 @@ class Blog(models.Model):
     classify = models.ForeignKey(BlogClassify, null=True, on_delete=models.CASCADE, related_name='blog')
     tags = models.ManyToManyField(Tag, blank=True)
     avatar = models.ImageField(upload_to='blog/%Y%m%d/', blank=True)
+    difficulty=models.ForeignKey(BlogDifficulty,null=True,on_delete=models.CASCADE, related_name='blog')
+    datastructrue=models.ForeignKey(BlogClassifyDataStructure,null=True,on_delete=models.CASCADE, related_name='blog')
+    algorithm=models.ForeignKey(BlogAlgorithm,null=True,on_delete=models.CASCADE, related_name='blog')
 
     class Meta:
         ordering = ('-created_time',)

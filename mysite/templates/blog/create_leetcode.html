@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}
+    首页
+{% endblock title %}
+{% block content %}
+<div class="container">
+    <div>
+        <form method="post" action="" enctype="multipart/form-data">
+        {% csrf_token %}
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" name="title" size="80">
+            </div>
+            <div class="form-group">
+                <label for="difficulty">Difficulty(<a href="{% url 'blog:difficulty_add' %}">New</a>)</label>
+                <select class="form-control" id="difficulty" name="difficulty">
+                    <option value="none">Please choose difficulty..</option>
+                    {% for difficulty in difficulty %}
+                        <option value="{{ difficulty.id }}">{{ difficulty }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="datastructrue">Datastructrue(<a href="{% url 'blog:datastructrue_add' %}">New</a>)</label>
+                <select class="form-control" id="datastructrue" name="datastructrue">
+                    <option value="none">Please choose datastructrue..</option>
+                    {% for datastructrue in datastructrue %}
+                        <option value="{{ datastructrue.id }}">{{ datastructrue }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="algorithm">Datastructrue(<a href="{% url 'blog:algorithm_add' %}">New</a>)</label>
+                <select class="form-control" id="algorithm" name="algorithm">
+                    <option value="none">Please choose algorithm..</option>
+                    {% for algorithm in algorithm %}
+                        <option value="{{ algorithm.id }}">{{ algorithm }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <textarea id="body" class="form-control" name="body" rows=20 cols="120" placeholder="please use markdown language"></textarea>
+            </div>
+
+
+            <div class="form-group">
+                <label for="tag">Tags</label>
+                    <input class="form-control" type="text" id="tag" name="tag" placeholder="please use ',' to seperate">
+            </div>
+            <button type="submit">Publish</button>
+    </form>
+    </div>
+</div>
+
+{% endblock content %}

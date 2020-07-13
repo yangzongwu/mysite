@@ -9,7 +9,7 @@
         <form method="post" action="" enctype="multipart/form-data">
         {% csrf_token %}
             <div class="form-group">
-                <label for="title">Title</label>
+                <label for="title">Title <a href="{% url 'blog:blog_create_leetcode' %}">New for Leetcode</a></label>
                 <input type="text" class="form-control" id="title" name="title" size="80">
             </div>
             <div class="form-group">

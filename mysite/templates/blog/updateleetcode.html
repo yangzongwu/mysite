@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}
+    首页
+{% endblock title %}
+{% block content %}
+<div class="container">
+    <div>
+        <form method="post" action="">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" name="title" value="{{ blog.title }}">
+            </div>
+
+            <div class="form-group">
+                <label for="classify">classify</label>
+                <select class="form-control" id="classify" name="classify">
+                    <option value="none">Please choose classify..</option>
+                    {% for classify in classifies %}
+                    <option value="{{ classify.id }}"
+                            {% if classify.id == blog.classify.id %}
+                            selected
+                            {% endif %}
+                    >
+                        {{ classify }}
+                    </option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="difficulty">difficulty</label>
+                <select class="form-control" id="difficulty" name="difficulty">
+                    <option value="none">Please choose difficulty..</option>
+                    {% for difficulty in difficulty %}
+                    <option value="{{ difficulty.id }}"
+                            {% if difficulty.id == blog.difficulty.id %}
+                            selected
+                            {% endif %}
+                    >
+                        {{ difficulty }}
+                    </option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="structure">structure</label>
+                <select class="form-control" id="structure" name="structure">
+                    <option value="none">Please choose structure..</option>
+                    {% for structure in structure %}
+                    <option value="{{ structure.id }}"
+                            {% if structure.id == blog.structure.id %}
+                            selected
+                            {% endif %}
+                    >
+                        {{ structure }}
+                    </option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="algorithm">algorithm</label>
+                <select class="form-control" id="algorithm" name="algorithm">
+                    <option value="none">Please choose algorithm..</option>
+                    {% for algorithm in algorithm %}
+                    <option value="{{ algorithm.id }}"
+                            {% if algorithm.id == blog.algorithm.id %}
+                            selected
+                            {% endif %}
+                    >
+                        {{ algorithm }}
+                    </option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <textarea id="body" class="form-control" name="body" rows="12">{{ blog.body }}</textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Publish</button>
+        </form>
+    </div>
+</div>
+{% endblock content %}

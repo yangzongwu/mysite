@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}
+    首页
+{% endblock title %}
+{% block content %}
+<div class="container">
+    <div>
+        <form method="post" action="" enctype="multipart/form-data">
+        {% csrf_token %}
+            <div class="form-group">
+                <label for="new_datastructure">datastructure</label>
+                    <input class="form-control" type="text" id="new_datastructure" name="new_datastructure" placeholder="please add new datastructure">
+            </div>
+
+            <div class="form-group">
+                {% for datastructure in datastructures %}
+                <p>{{datastructure.title}}</p>
+                {% endfor %}
+            </div>
+
+            <button type="submit">Publish</button>
+    </form>
+    </div>
+</div>
+
+{% endblock content %}
