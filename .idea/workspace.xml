@@ -41,44 +41,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49ffeae1-b313-454d-bb48-7649f2c182c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/02 Greedy 贪心思想/0874. Walking Robot Simulation.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 String 字符串/0893. Groups of Special-Equivalent Strings.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 String 字符串/0917. Reverse Only Letters.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 String 字符串/0937. Reorder Data in Log Files.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 String 字符串/1071. Greatest Common Divisor of Strings.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 String 字符串/1170. Compare Strings by Frequency of the Smallest Character.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 String 字符串/1332. Remove Palindromic Subsequences.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 String 字符串/1370. Increasing Decreasing String.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 Array 数组/0914. X of a Kind in a Deck of Cards.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 Array 数组/0985. Sum of Even Numbers After Queries.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 Array 数组/0989. Add to Array-Form of Integer.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 Array 数组/1089. Duplicate Zeros.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 Array 数组/1184. Distance Between Bus Stops.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 Array 数组/1287. Element Appearing More Than 25% In Sorted Array.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 Array 数组/1331. Rank Transform of an Array.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 Array 数组/1346. Check If N and Its Double Exist.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-1 Array 矩阵/0999. Available Captures for Rook.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-1 Array 矩阵/1029. Two City Scheduling.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-1 Array 矩阵/1030. Matrix Cells in Distance Order.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-1 Array 矩阵/1260. Shift 2D Grid.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-1 Array 矩阵/1275. Find Winner on a Tic Tac Toe Game.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/14 Tree 树/0501. Find Mode in Binary Search Tree.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/15 Graph 图/0997. Find the Town Judge.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/15 Graph 图/1042. Flower Planting With No Adjacent.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/16 Bit Manipulation 位运算/1009. Complement of Base 10 Integer.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/1175. Prime Arrangements.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/1317. Convert Integer to the Sum of Two No-Zero Integers.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/1360. Number of Days Between Two Dates.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/blog/migrations/0013_auto_20200713_1959.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/blog/migrations/0014_auto_20200713_2214.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/blog/migrations/0015_auto_20200713_2301.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/record/migrations/0007_auto_20200713_1959.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/templates/blog/algorithm_add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/templates/blog/create_leetcode.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/templates/blog/datastructure_add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/templates/blog/difficulty_add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/templates/blog/listleetcode.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/templates/blog/updateleetcode.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mysite01/blog/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mysite01/blog/admin.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mysite01/blog/apps.py" afterDir="false" />
@@ -1471,15 +1433,10 @@
       <change afterPath="$PROJECT_DIR$/mysite01/user/tests.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mysite01/user/urls.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mysite01/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mynote/05 Linux/项目部署/网站更新.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/05 Linux/项目部署/网站更新.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/blog/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/blog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/blog/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/blog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/blog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/templates/blog/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/blog/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1872,7 +1829,21 @@
       <option name="project" value="LOCAL" />
       <updated>1594566832513</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="20200713">
+      <created>1594655519082</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1594655519082</updated>
+    </task>
+    <task id="LOCAL-00039" summary="增加leetcode">
+      <created>1594655560500</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1594655560500</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1899,18 +1870,20 @@
     <MESSAGE value="20200711" />
     <MESSAGE value="完善分页功能和搜索功能" />
     <MESSAGE value="20200712" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200712" />
+    <MESSAGE value="20200713" />
+    <MESSAGE value="增加leetcode" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加leetcode" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="587" y="-983" key="CommitChangelistDialog2" timestamp="1594566830390">
+    <state x="587" y="-983" key="CommitChangelistDialog2" timestamp="1594655552474">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="587" y="-983" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594566830390" />
+    <state x="587" y="-983" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594655552474" />
     <state x="418" y="0" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1594393189865" />
-    <state x="552" y="-828" key="Vcs.Push.Dialog.v2" timestamp="1594568294988">
+    <state x="552" y="-828" key="Vcs.Push.Dialog.v2" timestamp="1594655651738">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="552" y="-828" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594568294988" />
+    <state x="552" y="-828" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594655651738" />
     <state x="393" y="176" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1594393199067" />
   </component>
 </project>

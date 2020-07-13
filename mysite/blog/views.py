@@ -317,7 +317,7 @@ def blog_list_leetcode(request):
     blog_Algorithm=BlogAlgorithm.objects.all()
     # 初始化查询集
 
-    classify = BlogClassify.objects.get(title='leetcode')
+    classify = BlogClassify.objects.get(title='Leetcode')
 
     blog_list= Blog.objects.all()
     blog_list = blog_list.filter(classify=classify)
