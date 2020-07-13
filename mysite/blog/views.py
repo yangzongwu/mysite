@@ -51,7 +51,7 @@ def difficulty_add(request):
                 add_difficulty = BlogDifficulty(title=new_add_difficulty)
                 add_difficulty.save()
                 #new_difficulty.save()
-                return redirect("blog:blog_list_leetcode")
+                return redirect("blog:difficulty_add")
             else:
                 return HttpResponse("already exist")
 
@@ -76,7 +76,7 @@ def datastructrue_add(request):
                 add_datastructure = BlogClassifyDataStructure(title=new_add_datastructure)
                 add_datastructure.save()
                 #new_datastructure.save()
-                return redirect("blog:blog_list_leetcode")
+                return redirect("blog:datastructrue_add")
             else:
                 return HttpResponse("already exist")
         else:
@@ -100,7 +100,7 @@ def algorithm_add(request):
                 add_algorithm = BlogAlgorithm(title=new_add_algorithm)
                 add_algorithm.save()
                 #new_algorithm.save()
-                return redirect("blog:blog_list_leetcode")
+                return redirect("blog:algorithm_add")
             else:
                 return HttpResponse("already exist")
         else:
@@ -173,9 +173,9 @@ def blog_update(request, id):
                 else:
                     blog.difficulty = None
                 if request.POST['structure'] and request.POST['structure']!= 'none':
-                    blog.structure = BlogClassifyDataStructure.objects.get(id=request.POST['structure'])
+                    blog.datastructrue = BlogClassifyDataStructure.objects.get(id=request.POST['structure'])
                 else:
-                    blog.structure = None
+                    blog.datastructrue = None
                 if request.POST['algorithm'] and request.POST['algorithm']!= 'none':
                     blog.algorithm = BlogAlgorithm.objects.get(id=request.POST['algorithm'])
                 else:

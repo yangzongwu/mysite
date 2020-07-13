@@ -51,7 +51,7 @@
                     <option value="none">Please choose structure..</option>
                     {% for structure in structure %}
                     <option value="{{ structure.id }}"
-                            {% if structure.id == blog.structure.id %}
+                            {% if structure.id == blog.datastructrue.id %}
                             selected
                             {% endif %}
                     >

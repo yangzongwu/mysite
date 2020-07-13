@@ -29,26 +29,27 @@
 
               <div>
                   <p><b>Data Structure:</b></p>
-                  <button type="button" class="btn btn-outline-secondary">
+                  <button type="button" class="btn btn-light">
                     <a href="{% url 'blog:blog_list_leetcode' %}?search={{ search }}&difficulty={{ difficulty }}&algorithm={{ algorithm }}">All</a>
                   </button>
                 {% for datastructure in blog_DataStructure %}
-                <button type="button" class="btn btn-outline-secondary">
+                <button type="button" class="btn btn-light">
                     <a href="{% url 'blog:blog_list_leetcode' %}?search={{ search }}&difficulty={{ difficulty }}&datastructure={{ datastructure.id }}&algorithm={{ algorithm }}">{{ datastructure.title }}</a>
                   </button>
                     {% endfor %}
               </div>
         <div>
                   <p><b>Algorithm:</b></p>
-            <button type="button" class="btn btn-outline-secondary">
+            <button type="button" class="btn btn-light">
                     <a href="{% url 'blog:blog_list_leetcode' %}?search={{ search }}&difficulty={{ difficulty }}&datastructure={{ datastructure }}">ALL</a>
                   </button>
                 {% for algorithm in blog_Algorithm %}
-                <button type="button" class="btn btn-outline-secondary">
+                <button type="button" class="btn btn-light">
                     <a href="{% url 'blog:blog_list_leetcode' %}?search={{ search }}&difficulty={{ difficulty }}&datastructure={{ datastructure }}&algorithm={{ algorithm.id }}">{{ algorithm.title }}</a>
                   </button>
                     {% endfor %}
               </div>
+        <p></p>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
