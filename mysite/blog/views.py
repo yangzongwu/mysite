@@ -167,7 +167,7 @@ def blog_update(request, id):
             else:
                 blog.classify = None
 
-            if blog.classify.title == 'leetcode':
+            if blog.classify.title == 'Leetcode':
                 if request.POST['difficulty'] and request.POST['difficulty']!= 'none':
                     blog.difficulty = BlogDifficulty.objects.get(id=request.POST['difficulty'])
                 else:
@@ -202,7 +202,7 @@ def blog_update(request, id):
         else:
             return HttpResponse("表单有问题")
     else:
-        if blog.classify.title!='leetcode':
+        if blog.classify.title!='Leetcode':
             blog_post_form = BlogPostForm()
             classifies = BlogClassify.objects.all()
             cur_all_tags = blog.tags.all()
@@ -287,7 +287,7 @@ def blog_create_leetcode(request):
             if request.POST['algorithm'] != 'none':
                 new_blog.algorithm = BlogAlgorithm.objects.get(id=request.POST['algorithm'])
             new_blog.save()
-            new_blog.classify = BlogClassify.objects.get(title='leetcode')
+            new_blog.classify = BlogClassify.objects.get(title='Leetcode')
             new_blog.save()
 
 
