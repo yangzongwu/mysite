@@ -2,9 +2,15 @@
   <h3 class="">Classify(<a href="{% url 'blog:classify_add' %}">New</a>):</h3>
   <ul>
     {% for classify in classify_list %}
+    {% if classify.title == 'Leetcode' %}
+    <li>
+        <a href="{% url 'blog:blog_list_leetcode' %}?classify={{ classify.id }}">{{ classify.title }}<span class="post-count">({{ classify.num_posts }})</span></a>
+      </li>
+    {% else %}
       <li>
         <a href="{% url 'blog:blog_list' %}?classify={{ classify.id }}">{{ classify.title }}<span class="post-count">({{ classify.num_posts }})</span></a>
       </li>
+    {% endif %}
     {% empty %}
       暂无分类！
     {% endfor %}
