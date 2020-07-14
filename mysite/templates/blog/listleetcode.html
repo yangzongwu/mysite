@@ -56,12 +56,12 @@
             <ul class="navbar-nav mr-auto">
                 <li class="breadcrumb-item">
                     <a href="{% url 'blog:blog_list_leetcode' %}?search={{ search }}&difficulty={{ difficulty }}&datastructure={{ datastructure }}&algorithm={{ algorithm }}">
-                        最新
+                        Newest
                     </a>
                 </li>
                 <li class="breadcrumb-item">
                     <a href="{% url 'blog:blog_list_leetcode' %}?order=total_views&search={{ search }}&difficulty={{ difficulty }}&datastructure={{ datastructure }}&algorithm={{ algorithm }}">
-                    最热
+                        Popular
                     </a>
                 </li>
             </ul>
@@ -90,29 +90,7 @@
     {% endif %}
 
     {% for blog in blogs %}
-    {% if blog.avatar %}
-            <div class="col-3">
-                <img src="{{ blog.avatar.url }}"
-                     alt="avatar"
-                     style="max-width:100%; border-radius: 20px"
-                >
-            </div>
-        {% endif %}
-
-    {% if blog.classify %}
-        {{ blog.classify }}
-    {% endif %}
-
-    {% for tag in blog.tags.all %}
-        <a href="#" class="badge badge-secondary">
-            {{ tag.name }}
-        </a>
-    {% endfor %}
-
-    <h3><a href="{% url 'blog:blog_detail' blog.id %}">{{blog.title}}</a></h3>
-        <small class="" style="color: gray;"><i class="fas fa-eye" style="color: lightskyblue;"></i>{{ blog.total_views }}&nbsp;author: {{ blog.author }},
-            发布日期 {{blog.created_time|date:'Y-m-d'}},最近修改 {{blog.updated_time|date:'Y-m-d'}}</small>
-        <p><small class="text-wrap" style="word-wrap: break-word; color: gray;">{{blog.abstract}}</small></p>
+    <h4><a href="{% url 'blog:blog_detail' blog.id %}">{{blog.title}}</a></h4>
     {% endfor %}
 
 

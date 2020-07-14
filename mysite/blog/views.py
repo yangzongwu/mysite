@@ -343,7 +343,7 @@ def blog_list_leetcode(request):
     if order == 'total_views':
         blog_list = blog_list.order_by('-total_views')
 
-    paginator = Paginator(blog_list, 5)
+    paginator = Paginator(blog_list, 20)
     page = request.GET.get('page')
     blogs = paginator.get_page(page)
 
@@ -377,6 +377,9 @@ def blog_list(request):
     # 栏目查询集
     if classify is not None and classify.isdigit():
         blog_list = blog_list.filter(classify=classify)
+
+    cur=BlogClassify.objects.get(title='Leetcode')
+    blog_list = blog_list.filter(~Q(classify= cur))
 
     # 标签查询集
     if tag and tag != 'None':
