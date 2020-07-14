@@ -90,7 +90,10 @@
     {% endif %}
 
     {% for blog in blogs %}
-    <h4><a href="{% url 'blog:blog_detail' blog.id %}">{{blog.title}}</a></h4>
+        <h3><a href="{% url 'blog:blog_detail' blog.id %}">{{blog.title}}</a></h3>
+        <small class="" style="color: gray;"><i class="fas fa-eye" style="color: lightskyblue;"></i>{{ blog.total_views }}&nbsp;author: {{ blog.author }},
+            发布日期 {{blog.created_time|date:'Y-m-d'}},最近修改 {{blog.updated_time|date:'Y-m-d'}}</small>
+        <p><small class="text-wrap" style="word-wrap: break-word; color: gray;">{{blog.abstract}}</small></p>
     {% endfor %}
 
 
