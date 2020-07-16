@@ -439,9 +439,31 @@ def user_stat(request):
     total_views = Website_views.objects.first()
     user_ip = view_ip.objects.all()
     view_ip_historys=view_ip_history.objects.all()
+
+    dict_d={}
+    stat_data=[]
+    for obj in view_ip_historys:
+        ct = obj.create_time
+        x=str(ct)
+        x=x[:10]
+        if x not in dict_d:
+            dict_d[x]=1
+        else:
+            dict_d[x]+=1
+        if not stat_data:
+            stat_data.append(x)
+        else:
+            if x!=stat_data[-1]:
+                stat_data.append(x)
+
+    listx=stat_data
+    listy=[dict_d[x] for x in listx]
+
     context = {
         'total_views': total_views,
         'user_ips': user_ip,
         'view_ip_historys':view_ip_historys,
+        'listx':listx,
+        'listy':listy,
     }
     return render(request, 'blog/userstat.html', context)
