@@ -34,10 +34,10 @@
     </div>
     {% if search %}
         {% if blogs %}
-            <h4><span style="color: red">"{{ search }}"</span>的搜索结果如下：</h4>
+            <h4><span style="color: red">"{{ search }}"</span>searching result：</h4>
             <hr>
         {% else %}
-            <h4>暂无<span style="color: red">"{{ search }}"</span>有关的文章。</h4>
+            <h4>No <span style="color: red">"{{ search }}"</span> result</h4>
             <hr>
         {% endif %}
     {% endif %}
@@ -64,7 +64,7 @@
 
     <h3><a href="{% url 'blog:blog_detail' blog.id %}">{{blog.title}}</a></h3>
         <small class="" style="color: gray;"><i class="fas fa-eye" style="color: lightskyblue;"></i>{{ blog.total_views }}&nbsp;author: {{ blog.author }},
-            发布日期 {{blog.created_time|date:'Y-m-d'}},最近修改 {{blog.updated_time|date:'Y-m-d'}}</small>
+            Created {{blog.created_time|date:'Y-m-d'}},Updated {{blog.updated_time|date:'Y-m-d'}}</small>
         <p><small class="text-wrap" style="word-wrap: break-word; color: gray;">{{blog.abstract}}</small></p>
     {% endfor %}
 
