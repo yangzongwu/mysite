@@ -41,8 +41,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49ffeae1-b313-454d-bb48-7649f2c182c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/03 Two Pointers 双指针/0011. Container With Most Water.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/05 backtracking/0017. Letter Combinations of a Phone Number.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/05 backtracking/0022. Generate Parentheses.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/05 backtracking/0039. Combination Sum.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/05 backtracking/0040. Combination Sum II.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/05 backtracking/0046. Permutations.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/05 backtracking/0047. Permutations II.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/05 backtracking/0077. Combinations.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/05 backtracking/1286. Iterator for Combination.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/10 Hash Table  哈希表/0049. Group Anagrams.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/10 Hash Table  哈希表/0438. Find All Anagrams in a String.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/10 Hash Table  哈希表/0451. Sort Characters By Frequency.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 String 字符串/0043. Multiply Strings.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-1 Array 矩阵/0036. Valid Sudoku.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-1 Array 矩阵/0079. Word Search.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-1 Array 矩阵/1219. Path with Maximum Gold.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/16 Bit Manipulation 位运算/0029. Divide Two Integers.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/0012. Integer to Roman.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/0050. Pow(x, n).md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/Sliding Window/0003. Longest Substring Without Repeating Characters.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/templates/blog/userstat.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/blog/userstat.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +77,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../mynote" />
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="hiddenUrls">
@@ -223,13 +242,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584177242617</updated>
-    </task>
-    <task id="LOCAL-00003" summary="todolist change">
-      <created>1588217960818</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1588217960818</updated>
     </task>
     <task id="LOCAL-00004" summary="todolist change">
       <created>1588218070365</created>
@@ -567,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594862503365</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="20200715">
+      <created>1594863675180</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1594863675180</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -601,35 +620,35 @@
     <option name="LAST_COMMIT_MESSAGE" value="20200715" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="587" y="-983" key="CommitChangelistDialog2" timestamp="1594862501398">
+    <state x="587" y="-983" key="CommitChangelistDialog2" timestamp="1594863674100">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="587" y="-983" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594862501398" />
+    <state x="587" y="-983" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594863674100" />
     <state x="418" y="0" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1594657687956" />
     <state x="406" y="-870" key="DiffContextDialog" timestamp="1594658575808">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
     <state x="406" y="-870" key="DiffContextDialog/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594658575808" />
-    <state width="1899" height="434" key="GridCell.Tab.0.bottom" timestamp="1594861753760">
-      <screen x="0" y="-1080" width="1920" height="1040" />
+    <state width="1899" height="434" key="GridCell.Tab.0.bottom" timestamp="1594864738411">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1899" height="434" key="GridCell.Tab.0.bottom/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594861753760" />
-    <state width="1345" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1594744174640" />
-    <state width="1899" height="434" key="GridCell.Tab.0.center" timestamp="1594861753760">
-      <screen x="0" y="-1080" width="1920" height="1040" />
+    <state width="1899" height="434" key="GridCell.Tab.0.bottom/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1594864738411" />
+    <state width="1899" height="434" key="GridCell.Tab.0.center" timestamp="1594864738411">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1899" height="434" key="GridCell.Tab.0.center/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594861753760" />
-    <state width="1345" height="223" key="GridCell.Tab.0.center/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1594744174640" />
-    <state width="1899" height="434" key="GridCell.Tab.0.left" timestamp="1594861753760">
-      <screen x="0" y="-1080" width="1920" height="1040" />
+    <state width="1899" height="434" key="GridCell.Tab.0.center/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1594864738411" />
+    <state width="1899" height="434" key="GridCell.Tab.0.left" timestamp="1594864738410">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1899" height="434" key="GridCell.Tab.0.left/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594861753760" />
-    <state width="1345" height="223" key="GridCell.Tab.0.left/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1594744174640" />
-    <state width="1899" height="434" key="GridCell.Tab.0.right" timestamp="1594861753760">
-      <screen x="0" y="-1080" width="1920" height="1040" />
+    <state width="1899" height="434" key="GridCell.Tab.0.left/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1594864738410" />
+    <state width="1899" height="434" key="GridCell.Tab.0.right" timestamp="1594864738411">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1899" height="434" key="GridCell.Tab.0.right/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594861753760" />
-    <state width="1345" height="223" key="GridCell.Tab.0.right/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1594744174640" />
+    <state width="1899" height="434" key="GridCell.Tab.0.right/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1594864738411" />
     <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1594744174640">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -646,10 +665,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1594744174640" />
-    <state x="552" y="-828" key="Vcs.Push.Dialog.v2" timestamp="1594862585702">
+    <state x="552" y="-828" key="Vcs.Push.Dialog.v2" timestamp="1594863683790">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="552" y="-828" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594862585702" />
+    <state x="552" y="-828" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594863683790" />
     <state x="393" y="176" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1594393199067" />
     <state x="758" y="-882" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594861074508">
       <screen x="0" y="-1080" width="1920" height="1040" />
