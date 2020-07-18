@@ -41,26 +41,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49ffeae1-b313-454d-bb48-7649f2c182c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/03 Two Pointers 双指针/0011. Container With Most Water.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/05 backtracking/0017. Letter Combinations of a Phone Number.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/05 backtracking/0022. Generate Parentheses.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/05 backtracking/0039. Combination Sum.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/05 backtracking/0040. Combination Sum II.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/05 backtracking/0046. Permutations.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/05 backtracking/0047. Permutations II.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/05 backtracking/0077. Combinations.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/05 backtracking/1286. Iterator for Combination.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/10 Hash Table  哈希表/0049. Group Anagrams.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/10 Hash Table  哈希表/0438. Find All Anagrams in a String.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/10 Hash Table  哈希表/0451. Sort Characters By Frequency.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/11 String 字符串/0043. Multiply Strings.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-1 Array 矩阵/0036. Valid Sudoku.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-1 Array 矩阵/0079. Word Search.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-1 Array 矩阵/1219. Path with Maximum Gold.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/16 Bit Manipulation 位运算/0029. Divide Two Integers.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/0012. Integer to Roman.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/17 Math/0050. Pow(x, n).md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/Sliding Window/0003. Longest Substring Without Repeating Characters.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/05 backtracking/0090. Subsets II.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/05 backtracking/0093. Restore IP Addresses.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/05 backtracking/0216. Combination Sum III.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/07 Dynamic Programming/0005. Longest Palindromic Substring.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/07 Dynamic Programming/0062. Unique Paths.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/07 Dynamic Programming/0063. Unique Paths II.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/07 Dynamic Programming/0064. Minimum Path Sum.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/07 Dynamic Programming/0091. Decode Ways.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/07 Dynamic Programming/0095. Unique Binary Search Trees II.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/07 Dynamic Programming/0120. Triangle.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/07 Dynamic Programming/0152. Maximum Product Subarray.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/07 Dynamic Programming/0213. House Robber II.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/07 Dynamic Programming/0221. Maximal Square.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/07 Dynamic Programming/0279. Perfect Squares.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/14 Tree 树/0116. Populating Next Right Pointers in Each Node.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/14 Tree 树/0117. Populating Next Right Pointers in Each Node II.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/14 Tree 树/0173. Binary Search Tree Iterator.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/14 Tree 树/0199. Binary Tree Right Side View.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/14 Tree 树/0236. Lowest Common Ancestor of a Binary Tree.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/14 Tree 树/0337. House Robber III.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Github/leetcode/20200215Python-China/0236. Lowest Common Ancestor of a Binary Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Github/leetcode/20200215Python-China/0236. Lowest Common Ancestor of a Binary Tree.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -242,13 +243,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584177242617</updated>
-    </task>
-    <task id="LOCAL-00004" summary="todolist change">
-      <created>1588218070365</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1588218070365</updated>
     </task>
     <task id="LOCAL-00005" summary="blog update">
       <created>1588218102071</created>
@@ -586,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594863675180</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="20200716">
+      <created>1594888876055</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1594888876056</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -617,13 +618,14 @@
     <MESSAGE value="增加leetcode" />
     <MESSAGE value="20200714" />
     <MESSAGE value="20200715" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200715" />
+    <MESSAGE value="20200716" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200716" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="587" y="-983" key="CommitChangelistDialog2" timestamp="1594863674100">
+    <state x="587" y="-983" key="CommitChangelistDialog2" timestamp="1594888873848">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="587" y="-983" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594863674100" />
+    <state x="587" y="-983" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594888873848" />
     <state x="418" y="0" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1594657687956" />
     <state x="406" y="-870" key="DiffContextDialog" timestamp="1594658575808">
       <screen x="0" y="-1080" width="1920" height="1040" />
@@ -665,10 +667,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1594744174640" />
-    <state x="552" y="-828" key="Vcs.Push.Dialog.v2" timestamp="1594863683790">
+    <state x="552" y="-828" key="Vcs.Push.Dialog.v2" timestamp="1594888904468">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="552" y="-828" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594863683790" />
+    <state x="552" y="-828" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594888904468" />
     <state x="393" y="176" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1594393199067" />
     <state x="758" y="-882" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594861074508">
       <screen x="0" y="-1080" width="1920" height="1040" />
