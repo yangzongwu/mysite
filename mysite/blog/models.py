@@ -8,7 +8,6 @@ from django.utils.html import strip_tags
 from taggit.managers import TaggableManager
 from PIL import Image
 
-
 class Website_views(models.Model):
     nid = models.AutoField(primary_key=True)
     views = models.IntegerField()
