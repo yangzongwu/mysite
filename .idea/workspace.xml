@@ -41,12 +41,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49ffeae1-b313-454d-bb48-7649f2c182c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../mynote/07 MySQL/创建MySQL表.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mynote/07 MySQL/安装.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/07 MySQL/安装.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/record/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/record/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +57,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../mynote" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="hiddenUrls">
@@ -227,13 +222,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584177242617</updated>
-    </task>
-    <task id="LOCAL-00006" summary="blog update">
-      <created>1588401716470</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1588401716470</updated>
     </task>
     <task id="LOCAL-00007" summary="blog update">
       <created>1588401831267</created>
@@ -571,7 +559,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595067627302</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="20200719">
+      <created>1595148641454</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1595148641455</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -604,13 +599,14 @@
     <MESSAGE value="20200715" />
     <MESSAGE value="20200716" />
     <MESSAGE value="20200718" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200718" />
+    <MESSAGE value="20200719" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200719" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="587" y="-983" key="CommitChangelistDialog2" timestamp="1595067623671">
+    <state x="587" y="-983" key="CommitChangelistDialog2" timestamp="1595148639163">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="587" y="-983" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1595067623671" />
+    <state x="587" y="-983" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1595148639163" />
     <state x="418" y="0" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1594657687956" />
     <state x="406" y="-870" key="DiffContextDialog" timestamp="1594658575808">
       <screen x="0" y="-1080" width="1920" height="1040" />
@@ -656,10 +652,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1594744174640" />
-    <state x="552" y="-828" key="Vcs.Push.Dialog.v2" timestamp="1595074463743">
+    <state x="552" y="-828" key="Vcs.Push.Dialog.v2" timestamp="1595148650361">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="552" y="-828" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1595074463743" />
+    <state x="552" y="-828" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1595148650361" />
     <state x="393" y="176" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1594393199067" />
     <state x="758" y="-882" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594861074508">
       <screen x="0" y="-1080" width="1920" height="1040" />
