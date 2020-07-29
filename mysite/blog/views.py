@@ -472,7 +472,7 @@ def user_stat(request):
     ipFinder()
     total_views = Website_views.objects.first()
     user_ip = view_ip.objects.all()
-    view_ip_historys=view_ip_history.objects.all()
+    view_ip_historys=view_ip_history.objects.all().order_by('create_time')
 
     dict_d={}
     stat_data=[]
