@@ -511,7 +511,7 @@ def user_stat(request):
     today_dict_national={}
     for obj in user_ip:
         national=obj.national
-        if national not in dict_national:
+        if national not in today_dict_national:
             today_dict_national[national]=1
         else:
             today_dict_national[national]+=1
