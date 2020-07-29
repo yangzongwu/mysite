@@ -6,7 +6,12 @@
 {% block content %}
 <div class="container">
     <div id="stat_chart"></div>
+    <h3>Today's views:</h3>
+    <div id="today_views_chart"></div>
+    <h3>Total views:</h3>
+    <div id="total_views_chart"></div>
     <h3>Total Viewers: {{total_views.views}}</h3>
+    <h3>Today's viewers:</h3>
     <table class="table table-striped">
       <thead>
         <tr>
@@ -22,24 +27,6 @@
             </tr>
           {% endfor %}
       </tbody>
-
-</table>
-    <h3>Total Viewers History:</h3>
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th scope="col">IP</th>
-          <th scope="col">Time</th>
-        </tr>
-      </thead>
-        {% for view_ip_history in view_ip_historys%}
-          <tbody>
-            <tr>
-              <td>{{view_ip_history.user_ip}}</td>
-              <td>{{view_ip_history.create_time}}</td>
-            </tr>
-          {% endfor %}
-      </tbody>
 </table>
 </div>
 
@@ -48,9 +35,6 @@
 
 {% block script %}
 <script>
-
-
-
 var options={
     chart:{
         type:"column"
@@ -76,5 +60,56 @@ var options={
 };
 var chart=Highcharts.chart("stat_chart",options);
 </script>
+<script>
+var options={
+    chart:{
+        type:"column"
+    },
+     title: { text: 'Total Views Stat.' },
+     xAxis: {
+            categories: [
+             {%for x in list_national%}
+              "{{x}}",
+              {%endfor%}
+            ]
 
+            },
+            yAxis: {
+                title: {
+                    text: 'Number'                // y 轴标题
+                }
+            },
+            series: [{                              // 数据列
+                name: 'Total Seach',                        // 数据列名
+                data: {{list_count}}                    // 数据
+            }]
+};
+var chart=Highcharts.chart("total_views_chart",options);
+</script>
+<script>
+var options={
+    chart:{
+        type:"column"
+    },
+     title: { text: 'Today Views Stat.' },
+     xAxis: {
+            categories: [
+             {%for x in today_list_national%}
+              "{{x}}",
+              {%endfor%}
+            ]
+
+            },
+            yAxis: {
+                title: {
+                    text: 'Number'                // y 轴标题
+                }
+            },
+            series: [{                              // 数据列
+                name: 'Today Seach',                        // 数据列名
+                data: {{today_list_count}}                    // 数据
+            }]
+};
+var chart=Highcharts.chart("today_views_chart",options);
+</script>
 {% endblock script %}

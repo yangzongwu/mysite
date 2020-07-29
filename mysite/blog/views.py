@@ -1,10 +1,10 @@
 import datetime
-
 import markdown
 from django.core.paginator import Paginator
 from django.db.models import Q
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse
+from lxml import etree
 
 from comment.forms import CommentForm
 from comment.models import Comment
@@ -12,7 +12,8 @@ from .models import Blog, BlogClassify, Tag, Website_views, view_ip, view_ip_his
     BlogDifficulty,BlogClassifyDataStructure,BlogAlgorithm
 from .forms import BlogPostForm,ClassifyAddForm,BlogDifficultyAddForm,BlogClassifyDataStructureAddForm,BlogAlgorithmAddForm
 from django.contrib.auth.models import User
-
+import requests
+from bs4 import BeautifulSoup
 
 def classify_add(request):
     if request.method == 'POST':
@@ -434,8 +435,41 @@ def blog_detail(request, id):
     }
     return render(request, 'blog/detail.html', context)
 
+def ipFinder():
+    def ipcheck(ip):
+        url = 'https://www.ip.cn/?ip=' + ip
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36'}
+        data = ip
+        response = requests.get(url=url, params=data, headers=headers)
+        page_text = response.text
+        tree = etree.HTML(page_text)
+        try:
+            ip_name = tree.xpath('//div[@id="result"]/div/p[3]/code/text()')[0]
+            ip_name = ip_name.split(',')[-1]
+            ip_name=ip_name.strip()
+        except:
+            ip_name = 'local host'
+        return ip_name
+
+    user_ip = view_ip.objects.all()
+    for user in user_ip[::-1]:
+        if not user.national or user.national == 'None':
+            user.national=ipcheck(user.user_ip)
+            user.save()
+        else:
+            break
+
+    user_ip_all = view_ip_history.objects.all()
+    for user in user_ip_all[::-1]:
+        if not user.national or user.national == 'None':
+            user.national = ipcheck(user.user_ip)
+            user.save()
+        else:
+            break
 
 def user_stat(request):
+    ipFinder()
     total_views = Website_views.objects.first()
     user_ip = view_ip.objects.all()
     view_ip_historys=view_ip_history.objects.all()
@@ -455,9 +489,38 @@ def user_stat(request):
         else:
             if x!=stat_data[-1]:
                 stat_data.append(x)
-
     listx=stat_data
     listy=[dict_d[x] for x in listx]
+
+
+    dict_national={}
+    for obj in view_ip_historys:
+        national=obj.national
+        print(national,dict_national)
+        if national not in dict_national:
+            dict_national[national]=1
+        else:
+            dict_national[national]+=1
+    list_national=[]
+    list_count=[]
+    for k,v in dict_national.items():
+        list_national.append(k)
+        list_count.append(v)
+
+
+    today_dict_national={}
+    for obj in user_ip:
+        national=obj.national
+        if national not in dict_national:
+            today_dict_national[national]=1
+        else:
+            today_dict_national[national]+=1
+    today_list_national=[]
+    today_list_count=[]
+    for k,v in today_dict_national.items():
+        today_list_national.append(k)
+        today_list_count.append(v)
+
 
     context = {
         'total_views': total_views,
@@ -465,5 +528,10 @@ def user_stat(request):
         'view_ip_historys':view_ip_historys,
         'listx':listx,
         'listy':listy,
+        'list_national':list_national,
+        'list_count':list_count,
+        'today_list_count':today_list_count,
+        'today_list_national':today_list_national,
     }
     return render(request, 'blog/userstat.html', context)
+

@@ -17,11 +17,13 @@ class view_ip(models.Model):
     nid = models.AutoField(primary_key=True)
     user_ip = models.CharField(max_length=15, null=False)
     create_time = models.DateTimeField(auto_now_add=True)
+    national=models.CharField(max_length=20,null=True)
 
 class view_ip_history(models.Model):
     nid = models.AutoField(primary_key=True)
     user_ip = models.CharField(max_length=15, null=False)
     create_time = models.DateTimeField(auto_now_add=True)
+    national=models.CharField(max_length=20,null=True)
 
 
 class BlogClassify(models.Model):
