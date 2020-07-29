@@ -458,7 +458,7 @@ def ipFinder():
             user.national=ipcheck(user.user_ip)
             user.save()
         else:
-            break
+            continue
 
     user_ip_all = view_ip_history.objects.all()
     for user in user_ip_all[::-1]:
@@ -466,7 +466,7 @@ def ipFinder():
             user.national = ipcheck(user.user_ip)
             user.save()
         else:
-            break
+            continue
 
 def user_stat(request):
     ipFinder()
