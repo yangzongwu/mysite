@@ -26,7 +26,6 @@ from blog.models import Blog
 
 sitemaps = {
     'blog': GenericSitemap({'queryset': Blog.objects.all(), 'date_field': 'updated_time'}, priority=0.6),
-    # 如果还要加其它的可以模仿上面的
 }
 
 urlpatterns = [
