@@ -18,8 +18,17 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
+from django.contrib.sitemaps.views import sitemap
+from django.contrib.sitemaps import GenericSitemap
+from blog.models import Blog
+
+sitemaps = {
+    'blog': GenericSitemap({'queryset': Blog.objects.all(), 'date_field': 'updated_time'}, priority=0.6),
+    # 如果还要加其它的可以模仿上面的
+}
 
 urlpatterns = [
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps},name='django.contrib.sitemaps.views.sitemap'),
     path('admin/', admin.site.urls),
     path('', include('blog.urls', namespace='blog')),
     path('user/', include('user.urls', namespace='user')),

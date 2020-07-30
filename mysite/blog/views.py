@@ -15,12 +15,6 @@ from django.contrib.auth.models import User
 import requests
 from bs4 import BeautifulSoup
 
-def sitemap(request):
-    return render(request,'sitemap.xml')
-
-def robots(request):
-    return render(request,'robots.txt')
-
 def classify_add(request):
     if request.method == 'POST':
         classify_add_form = ClassifyAddForm(request.POST, request.FILES)

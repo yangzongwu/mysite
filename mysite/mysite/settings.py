@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'notifications',
     'notice',
     'record',
+    'django.contrib.sitemaps',
 ]
 
 MIDDLEWARE = [
