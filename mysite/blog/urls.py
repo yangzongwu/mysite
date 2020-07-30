@@ -5,6 +5,7 @@ app_name = 'blog'
 urlpatterns = [
     path('',views.blog_list,name='blog_list'),
     path('sitemap.xml',views.sitemap,name='sitemap'),
+    path('robots.txt',views.robots,name='robots'),
     path('blog_list_leetcode',views.blog_list_leetcode,name='blog_list_leetcode'),
     path('blog_create_leetcode/',views.blog_create_leetcode,name='blog_create_leetcode'),
     path('blog-detail/<int:id>',views.blog_detail,name='blog_detail'),

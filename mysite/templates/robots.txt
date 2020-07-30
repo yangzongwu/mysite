@@ -1,0 +1,5 @@
+# allow google
+User-agent: *
+Allow: /
+
+Sitemap: http://yzw.herokuapp.com//sitemap.xml  

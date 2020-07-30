@@ -18,6 +18,8 @@ from bs4 import BeautifulSoup
 def sitemap(request):
     return render(request,'sitemap.xml')
 
+def robots(request):
+    return render(request,'robots.txt')
 
 def classify_add(request):
     if request.method == 'POST':
