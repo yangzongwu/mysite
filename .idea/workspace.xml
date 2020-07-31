@@ -41,8 +41,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49ffeae1-b313-454d-bb48-7649f2c182c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/07 Dynamic Programming/0139. Word Break.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/templates/blog/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/blog/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/templates/blog/listleetcode.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/blog/listleetcode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/templates/blog/userstat.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/blog/userstat.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +60,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../mynote" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="hiddenUrls">
@@ -224,20 +226,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584177242617</updated>
-    </task>
-    <task id="LOCAL-00026" summary="20200707">
-      <created>1594132839018</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1594132839018</updated>
-    </task>
-    <task id="LOCAL-00027" summary="20200707">
-      <created>1594173905565</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1594173905565</updated>
     </task>
     <task id="LOCAL-00028" summary="20200709">
       <created>1594309328619</created>
@@ -568,7 +556,21 @@
       <option name="project" value="LOCAL" />
       <updated>1596094200711</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="20200730">
+      <created>1596111446288</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1596111446288</updated>
+    </task>
+    <task id="LOCAL-00076" summary="20200731">
+      <created>1596194495695</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1596194495696</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -608,18 +610,19 @@
     <MESSAGE value="20200725" />
     <MESSAGE value="20200729" />
     <MESSAGE value="20200730" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200730" />
+    <MESSAGE value="20200731" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200731" />
   </component>
   <component name="WindowStateProjectService">
     <state x="725" y="-759" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596090309776">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
     <state x="725" y="-759" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1596090309776" />
-    <state x="418" y="0" key="CommitChangelistDialog2" timestamp="1596094199373">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="587" y="-983" key="CommitChangelistDialog2" timestamp="1596194494686">
+      <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="587" y="-983" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1596090126899" />
-    <state x="418" y="0" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1596094199373" />
+    <state x="587" y="-983" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1596194494686" />
+    <state x="418" y="0" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1596111444273" />
     <state x="418" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1596081892664" />
     <state x="406" y="-870" key="DiffContextDialog" timestamp="1595997238371">
       <screen x="0" y="-1080" width="1920" height="1040" />
@@ -666,11 +669,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1594744174640" />
-    <state x="393" y="176" key="Vcs.Push.Dialog.v2" timestamp="1596094206041">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="552" y="-828" key="Vcs.Push.Dialog.v2" timestamp="1596194502025">
+      <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="552" y="-828" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1596090188297" />
-    <state x="393" y="176" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1596094206041" />
+    <state x="552" y="-828" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1596194502025" />
+    <state x="393" y="176" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1596111568501" />
     <state x="393" y="176" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1596081900689" />
     <state x="758" y="-882" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594861074508">
       <screen x="0" y="-1080" width="1920" height="1040" />
