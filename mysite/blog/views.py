@@ -113,6 +113,20 @@ def algorithm_add(request):
         return render(request, 'blog/algorithm_add.html', context)
 
 def get_user_ip(request):
+    def tooManyCall(ip):
+        today_ips = view_ip.objects.all()
+        ip_stat = {}
+        for obj in today_ips:
+            _ip = '.'.join(obj.user_ip.split('.')[:3])
+            if _ip not in ip_stat:
+                ip_stat[_ip] = 1
+            else:
+                ip_stat[_ip] += 1
+        if ip in ip_stat and ip_stat[ip]>10:
+            return True
+        return False
+
+
     if 'HTTP_X_FORWARDED_FOR' in request.META:  # 获取用户真实IP地址
         user_ip = request.META['HTTP_X_FORWARDED_FOR']
     else:
@@ -124,10 +138,18 @@ def get_user_ip(request):
             objs = view_ip.objects.all()  # 不是当日访问则迭代删除表中数据
             for i in objs:
                 i.delete()
+
+
         if not view_ip.objects.filter(user_ip=user_ip):  # 判断当日用户是否已经访问过本网站
-            view_ip.objects.create(user_ip=user_ip)  # 将用户IP存入数据库
-            view_ip_history.objects.create(user_ip=user_ip)
-            total_views_add()  # 网站总访问量+1
+            tmp_ip = '.'.join(user_ip.split('.')[:3])
+            if not tooManyCall(tmp_ip):
+                view_ip.objects.create(user_ip=user_ip)  # 将用户IP存入数据库
+                view_ip_history.objects.create(user_ip=user_ip)
+                total_views_add()  # 网站总访问量+1
+                return True
+            else:
+                return False
+        return True
     else:
         # print(user_ip)
         view_ip.objects.create(user_ip=user_ip)
@@ -305,7 +327,8 @@ def blog_create_leetcode(request):
 
 
 def blog_list_leetcode(request):
-    get_user_ip(request)
+    if not get_user_ip(request):
+        return HttpResponse("Your local different IP visit to many times today , please visit tomorrow, Thanks for you visit! Have a good Day!")
     # 从 url 中提取查询参数
     search = request.POST.get('search')
     order = request.GET.get('order')
@@ -365,7 +388,8 @@ def blog_list_leetcode(request):
 
 
 def blog_list(request):
-    get_user_ip(request)
+    if not get_user_ip(request):
+        return HttpResponse("Your local different IP visit to many times today , please visit tomorrow, Thanks for you visit! Have a good Day!")
     # 从 url 中提取查询参数
     search = request.POST.get('search')
     order = request.GET.get('order')
@@ -415,7 +439,8 @@ def blog_list(request):
 
 
 def blog_detail(request, id):
-    get_user_ip(request)
+    if not get_user_ip(request):
+        return HttpResponse("Your local different IP visit to many times today , please visit tomorrow, Thanks for you visit! Have a good Day!")
     blog = Blog.objects.get(id=id)
     comments = Comment.objects.filter(blog=id)
     if request.user != blog.author:
@@ -434,6 +459,7 @@ def blog_detail(request, id):
         'comment_form': comment_form,
     }
     return render(request, 'blog/detail.html', context)
+
 
 def ipFinder():
     def ipcheck(ip):
@@ -467,6 +493,7 @@ def ipFinder():
             user.save()
         else:
             continue
+
 
 def user_stat(request):
     ipFinder()
