@@ -40,12 +40,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49ffeae1-b313-454d-bb48-7649f2c182c6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../mynote/.idea/mynote.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/.idea/mynote.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mysite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mysite.iml" afterDir="false" />
+    <list default="true" id="49ffeae1-b313-454d-bb48-7649f2c182c6" name="Default Changelist" comment="20200801">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,13 +223,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584177242617</updated>
-    </task>
-    <task id="LOCAL-00030" summary="20200710">
-      <created>1594393193157</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1594393193157</updated>
     </task>
     <task id="LOCAL-00031" summary="20200711">
       <created>1594456119393</created>
@@ -571,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596275001061</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="20200801">
+      <created>1596277919819</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1596277919819</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -620,11 +616,11 @@
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
     <state x="725" y="-759" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1596090309776" />
-    <state x="587" y="-983" key="CommitChangelistDialog2" timestamp="1596274998565">
-      <screen x="0" y="-1080" width="1920" height="1040" />
+    <state x="418" y="0" key="CommitChangelistDialog2" timestamp="1596392339140">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="587" y="-983" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1596274998565" />
-    <state x="418" y="0" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1596111444273" />
+    <state x="587" y="-983" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1596277917841" />
+    <state x="418" y="0" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1596392339140" />
     <state x="418" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1596081892664" />
     <state x="406" y="-870" key="DiffContextDialog" timestamp="1595997238371">
       <screen x="0" y="-1080" width="1920" height="1040" />
@@ -675,10 +671,10 @@
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
     <state x="461" y="-916" key="SettingsEditor/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1596275293934" />
-    <state x="552" y="-828" key="Vcs.Push.Dialog.v2" timestamp="1596275299739">
+    <state x="552" y="-828" key="Vcs.Push.Dialog.v2" timestamp="1596277925317">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="552" y="-828" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1596275299739" />
+    <state x="552" y="-828" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1596277925317" />
     <state x="393" y="176" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1596111568501" />
     <state x="393" y="176" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1596081900689" />
     <state x="758" y="-882" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594861074508">
