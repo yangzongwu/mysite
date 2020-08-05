@@ -122,7 +122,7 @@ def get_user_ip(request):
                 ip_stat[_ip] = 1
             else:
                 ip_stat[_ip] += 1
-        if ip in ip_stat and ip_stat[ip]>10:
+        if ip in ip_stat and ip_stat[ip]>5:
             return True
         return False
 
@@ -151,7 +151,6 @@ def get_user_ip(request):
                 return False
         return True
     else:
-        # print(user_ip)
         view_ip.objects.create(user_ip=user_ip)
         view_ip_history.objects.create(user_ip=user_ip)
         total_views_add()
@@ -463,24 +462,28 @@ def blog_detail(request, id):
 
 def ipFinder():
     def ipcheck(ip):
-        url = 'https://www.ip.cn/?ip=' + ip
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36'}
-        data = ip
-        response = requests.get(url=url, params=data, headers=headers)
-        page_text = response.text
-        tree = etree.HTML(page_text)
+        ip_name = None
         try:
-            ip_name = tree.xpath('//div[@id="result"]/div/p[3]/code/text()')[0]
-            ip_name = ip_name.split(',')[-1]
-            ip_name=ip_name.strip()
+            url = 'https://www.ip.cn/?ip=' + ip
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36'}
+            data = ip
+            response = requests.get(url=url, params=data, headers=headers)
+            page_text = response.text
+            tree = etree.HTML(page_text)
+            try:
+                ip_name = tree.xpath('//div[@id="result"]/div/p[3]/code/text()')[0]
+                ip_name = ip_name.split(',')[-1]
+                ip_name = ip_name.strip()
+            except:
+                ip_name = 'local host'
         except:
-            ip_name = 'local host'
+            ip_name='under_check'
         return ip_name
 
     user_ip = view_ip.objects.all()
     for user in user_ip[::-1]:
-        if not user.national or user.national == 'None':
+        if not user.national or user.national == 'None' or user.national == 'under_check':
             user.national=ipcheck(user.user_ip)
             user.save()
         else:
@@ -488,7 +491,7 @@ def ipFinder():
 
     user_ip_all = view_ip_history.objects.all()
     for user in user_ip_all[::-1]:
-        if not user.national or user.national == 'None':
+        if not user.national or user.national == 'None' or user.national == 'under_check':
             user.national = ipcheck(user.user_ip)
             user.save()
         else:
@@ -523,7 +526,6 @@ def user_stat(request):
     dict_national={}
     for obj in view_ip_historys:
         national=obj.national
-        print(national,dict_national)
         if national not in dict_national:
             dict_national[national]=1
         else:

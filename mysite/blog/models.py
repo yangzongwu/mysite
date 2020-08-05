@@ -7,6 +7,7 @@ from django.utils import timezone
 from django.utils.html import strip_tags
 from taggit.managers import TaggableManager
 from PIL import Image
+from django.contrib.sitemaps import ping_google
 
 class Website_views(models.Model):
     nid = models.AutoField(primary_key=True)
@@ -96,6 +97,12 @@ class Blog(models.Model):
             new_y = int(new_x * (y / x))
             resized_image = image.resize((new_x, new_y), Image.ANTIALIAS)
             resized_image.save(self.avatar.path)
+
+        super(Blog, self).save(*args, **kwargs)
+        try:
+            ping_google()
+        except Exception:
+            pass
 
         return blog
 
