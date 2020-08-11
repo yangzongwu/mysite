@@ -40,13 +40,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49ffeae1-b313-454d-bb48-7649f2c182c6" name="Default Changelist" comment="">
+    <list default="true" id="49ffeae1-b313-454d-bb48-7649f2c182c6" name="Default Changelist" comment="20200805">
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/02 Greedy 贪心思想/1540. Can Convert String in K Moves.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/09 栈与队列/1541. Minimum Insertions to Balance a Parentheses String Medium.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/12-0 Array 数组/1539. Kth Missing Positive Number.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/16 Bit Manipulation 位运算/1542. Find Longest Awesome Substring.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/blog/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mynote/07 MySQL/创建MySQL表.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/07 MySQL/创建MySQL表.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/blog/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/blog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +94,11 @@
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\study\mysite\mysite\templates" />
+      <recent name="D:\study\mysite\mysite" />
+      <recent name="D:\study\mysite" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\study\mysite\mysite\templates" />
       <recent name="D:\study\mynote\01 Algorithm\other" />
@@ -98,13 +106,8 @@
       <recent name="D:\study\mynote\01 Algorithm" />
       <recent name="D:\study\mynote\01 Algorithm\12-0 数组" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\study\mysite\mysite\templates" />
-      <recent name="D:\study\mysite\mysite" />
-      <recent name="D:\study\mysite" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.tests">
+  <component name="RunManager" selected="Python.test (1)">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="APP" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -118,6 +121,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="mysite" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mysite/blog" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mysite/blog/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -213,6 +237,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.tests" />
         <item itemvalue="Python.test" />
       </list>
@@ -228,13 +253,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584177242617</updated>
-    </task>
-    <task id="LOCAL-00032" summary="20200711">
-      <created>1594469882739</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1594469882740</updated>
     </task>
     <task id="LOCAL-00033" summary="20200711">
       <created>1594472154213</created>
@@ -572,7 +590,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596457269541</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="20200805">
+      <created>1596604752002</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1596604752003</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +614,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="~" />
     <MESSAGE value="todolist change" />
     <MESSAGE value="blog update" />
     <MESSAGE value="update" />
@@ -614,18 +638,19 @@
     <MESSAGE value="20200730" />
     <MESSAGE value="20200731" />
     <MESSAGE value="20200801" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200801" />
+    <MESSAGE value="20200805" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200805" />
   </component>
   <component name="WindowStateProjectService">
     <state x="725" y="-759" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596090309776">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
     <state x="725" y="-759" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1596090309776" />
-    <state x="418" y="0" key="CommitChangelistDialog2" timestamp="1596457266993">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="587" y="-983" key="CommitChangelistDialog2" timestamp="1596816775575">
+      <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="587" y="-983" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1596277917841" />
-    <state x="418" y="0" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1596457266993" />
+    <state x="587" y="-983" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1596816775575" />
+    <state x="418" y="0" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1596604747742" />
     <state x="418" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1596081892664" />
     <state x="406" y="-870" key="DiffContextDialog" timestamp="1595997238371">
       <screen x="0" y="-1080" width="1920" height="1040" />
@@ -636,26 +661,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1595076743711" />
-    <state width="1345" height="280" key="GridCell.Tab.0.bottom" timestamp="1596038297183">
+    <state width="1345" height="132" key="GridCell.Tab.0.bottom" timestamp="1597115875642">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1899" height="434" key="GridCell.Tab.0.bottom/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594861753760" />
-    <state width="1345" height="280" key="GridCell.Tab.0.bottom/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1596038297183" />
-    <state width="1345" height="280" key="GridCell.Tab.0.center" timestamp="1596038297183">
+    <state width="1345" height="132" key="GridCell.Tab.0.bottom/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1597115875642" />
+    <state width="1345" height="132" key="GridCell.Tab.0.center" timestamp="1597115875642">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1899" height="434" key="GridCell.Tab.0.center/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594861753760" />
-    <state width="1345" height="280" key="GridCell.Tab.0.center/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1596038297183" />
-    <state width="1345" height="280" key="GridCell.Tab.0.left" timestamp="1596038297183">
+    <state width="1345" height="132" key="GridCell.Tab.0.center/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1597115875642" />
+    <state width="1345" height="132" key="GridCell.Tab.0.left" timestamp="1597115875641">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1899" height="434" key="GridCell.Tab.0.left/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594861753760" />
-    <state width="1345" height="280" key="GridCell.Tab.0.left/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1596038297183" />
-    <state width="1345" height="280" key="GridCell.Tab.0.right" timestamp="1596038297183">
+    <state width="1345" height="132" key="GridCell.Tab.0.left/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1597115875641" />
+    <state width="1345" height="132" key="GridCell.Tab.0.right" timestamp="1597115875642">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1899" height="434" key="GridCell.Tab.0.right/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1594861753760" />
-    <state width="1345" height="280" key="GridCell.Tab.0.right/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1596038297183" />
+    <state width="1345" height="132" key="GridCell.Tab.0.right/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1597115875642" />
     <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1594744174640">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -676,11 +701,11 @@
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
     <state x="461" y="-916" key="SettingsEditor/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1596275293934" />
-    <state x="393" y="176" key="Vcs.Push.Dialog.v2" timestamp="1596457273618">
+    <state x="393" y="176" key="Vcs.Push.Dialog.v2" timestamp="1596604755939">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="552" y="-828" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1596277925317" />
-    <state x="393" y="176" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1596457273618" />
+    <state x="393" y="176" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1596604755939" />
     <state x="393" y="176" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1596081900689" />
     <state x="758" y="-882" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594861074508">
       <screen x="0" y="-1080" width="1920" height="1040" />

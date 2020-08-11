@@ -464,7 +464,7 @@ def ipFinder():
     def ipcheck(ip):
         ip_name = None
         try:
-            url = 'https://www.ip.cn/?ip=' + ip
+            url = 'http://ip.cn/?ip=' + ip
             headers = {
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36'}
             data = ip
@@ -472,7 +472,7 @@ def ipFinder():
             page_text = response.text
             tree = etree.HTML(page_text)
             try:
-                ip_name = tree.xpath('//div[@id="result"]/div/p[3]/code/text()')[0]
+                ip_name = tree.xpath('//*[@id="result"]/div/p[3]/code/text()')[0]
                 ip_name = ip_name.split(',')[-1]
                 ip_name = ip_name.strip()
             except:
@@ -493,6 +493,7 @@ def ipFinder():
     for user in user_ip_all[::-1]:
         if not user.national or user.national == 'None' or user.national == 'under_check':
             user.national = ipcheck(user.user_ip)
+            print(user.national)
             user.save()
         else:
             continue
