@@ -40,12 +40,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49ffeae1-b313-454d-bb48-7649f2c182c6" name="Default Changelist" comment="20200811">
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/04 Sort排序/1387. Sort Integers by The Power Value.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/10 Hash Table  哈希表/0781. Rabbits in Forest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/10 Hash Table  哈希表/0974. Subarray Sums Divisible by K.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mynote/01 Algorithm/10 Hash Table  哈希表/1138. Alphabet Board Path.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mynote/05 Spider/python网络数据采集/04 API.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/05 Spider/python网络数据采集/04 API.py" afterDir="false" />
+    <list default="true" id="49ffeae1-b313-454d-bb48-7649f2c182c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,18 +86,18 @@
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\study\mynote\Spider" />
+      <recent name="D:\study\mysite\mysite\templates" />
+      <recent name="D:\study\mysite\mysite" />
+      <recent name="D:\study\mysite" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\study\mynote\Spider\爬虫案列" />
       <recent name="D:\study\mynote\Spider" />
       <recent name="D:\study\mysite\mysite\templates" />
       <recent name="D:\study\mynote\01 Algorithm\other" />
       <recent name="D:\study\mynote\ML" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\study\mynote\Spider" />
-      <recent name="D:\study\mysite\mysite\templates" />
-      <recent name="D:\study\mysite\mysite" />
-      <recent name="D:\study\mysite" />
     </key>
   </component>
   <component name="RunManager" selected="Python.test (1)">
@@ -252,13 +247,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584177242617</updated>
-    </task>
-    <task id="LOCAL-00034" summary="20200712">
-      <created>1594534433404</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1594534433404</updated>
     </task>
     <task id="LOCAL-00035" summary="完善分页功能和搜索功能">
       <created>1594541817103</created>
@@ -596,7 +584,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597116000617</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="20201012">
+      <created>1602513475453</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1602513475453</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -613,7 +608,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="blog update" />
     <MESSAGE value="update" />
     <MESSAGE value="20200707" />
     <MESSAGE value="20200709" />
@@ -638,17 +632,18 @@
     <MESSAGE value="20200801" />
     <MESSAGE value="20200805" />
     <MESSAGE value="20200811" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200811" />
+    <MESSAGE value="20201012" />
+    <option name="LAST_COMMIT_MESSAGE" value="20201012" />
   </component>
   <component name="WindowStateProjectService">
     <state x="725" y="-759" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596090309776">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
     <state x="725" y="-759" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1596090309776" />
-    <state x="418" y="0" key="CommitChangelistDialog2" timestamp="1597123378417">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="587" y="-983" key="CommitChangelistDialog2" timestamp="1602513473664">
+      <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="587" y="-983" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1596816775575" />
+    <state x="587" y="-983" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602513473664" />
     <state x="418" y="0" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1597123378417" />
     <state x="418" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1596081892664" />
     <state x="406" y="-870" key="DiffContextDialog" timestamp="1595997238371">
@@ -696,15 +691,15 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1594744174640" />
-    <state x="328" y="17" key="SettingsEditor" timestamp="1597123400085">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="461" y="-916" key="SettingsEditor" timestamp="1602514520258">
+      <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="461" y="-916" key="SettingsEditor/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1596275293934" />
+    <state x="461" y="-916" key="SettingsEditor/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602514520258" />
     <state x="328" y="17" key="SettingsEditor/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1597123400085" />
-    <state x="393" y="176" key="Vcs.Push.Dialog.v2" timestamp="1597116016308">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="552" y="-828" key="Vcs.Push.Dialog.v2" timestamp="1602514526402">
+      <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="552" y="-828" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1596277925317" />
+    <state x="552" y="-828" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602514526402" />
     <state x="393" y="176" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1597116016308" />
     <state x="393" y="176" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1596081900689" />
     <state x="758" y="-882" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594861074508">
