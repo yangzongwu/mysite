@@ -40,7 +40,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49ffeae1-b313-454d-bb48-7649f2c182c6" name="Default Changelist" comment="" />
+    <list default="true" id="49ffeae1-b313-454d-bb48-7649f2c182c6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../mynote/06 Linux/虚拟机服务器配置/Xshell远程登陆.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mynote/06 Linux/虚拟机服务器配置/Xshell远程登陆.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,18 +87,18 @@
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\study\mysite\mysite" />
+      <recent name="D:\study\mynote\Spider\爬虫案列" />
+      <recent name="D:\study\mynote\Spider" />
+      <recent name="D:\study\mysite\mysite\templates" />
+      <recent name="D:\study\mynote\01 Algorithm\other" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\study\mynote\Spider" />
       <recent name="D:\study\mysite\mysite\templates" />
       <recent name="D:\study\mysite\mysite" />
       <recent name="D:\study\mysite" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\study\mynote\Spider\爬虫案列" />
-      <recent name="D:\study\mynote\Spider" />
-      <recent name="D:\study\mysite\mysite\templates" />
-      <recent name="D:\study\mynote\01 Algorithm\other" />
-      <recent name="D:\study\mynote\ML" />
     </key>
   </component>
   <component name="RunManager" selected="Python.test (1)">
@@ -245,13 +248,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584177242617</updated>
-    </task>
-    <task id="LOCAL-00036" summary="20200712">
-      <created>1594564404835</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1594564404835</updated>
     </task>
     <task id="LOCAL-00037" summary="20200712">
       <created>1594566832513</created>
@@ -589,7 +585,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602600224176</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="20201017">
+      <created>1602928705843</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1602928705844</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -606,7 +609,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="20200707" />
     <MESSAGE value="20200709" />
     <MESSAGE value="20200710" />
     <MESSAGE value="20200711" />
@@ -631,17 +633,18 @@
     <MESSAGE value="20200811" />
     <MESSAGE value="20201012" />
     <MESSAGE value="20201013" />
-    <option name="LAST_COMMIT_MESSAGE" value="20201013" />
+    <MESSAGE value="20201017" />
+    <option name="LAST_COMMIT_MESSAGE" value="20201017" />
   </component>
   <component name="WindowStateProjectService">
     <state x="725" y="-759" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596090309776">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
     <state x="725" y="-759" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1596090309776" />
-    <state x="418" y="0" key="CommitChangelistDialog2" timestamp="1602600222667">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="587" y="-983" key="CommitChangelistDialog2" timestamp="1602928704884">
+      <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="587" y="-983" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602513473664" />
+    <state x="587" y="-983" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602928704884" />
     <state x="418" y="0" key="CommitChangelistDialog2/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1597123378417" />
     <state x="418" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1602600222667" />
     <state x="406" y="-870" key="DiffContextDialog" timestamp="1595997238371">
@@ -694,10 +697,10 @@
     </state>
     <state x="461" y="-916" key="SettingsEditor/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602514520258" />
     <state x="328" y="17" key="SettingsEditor/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1597123400085" />
-    <state x="393" y="176" key="Vcs.Push.Dialog.v2" timestamp="1602600229238">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="552" y="-828" key="Vcs.Push.Dialog.v2" timestamp="1602928872523">
+      <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="552" y="-828" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602514526402" />
+    <state x="552" y="-828" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1602928872523" />
     <state x="393" y="176" key="Vcs.Push.Dialog.v2/0.0.1366.728/0.-1080.1920.1040@0.0.1366.728" timestamp="1597116016308" />
     <state x="393" y="176" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1602600229238" />
     <state x="758" y="-882" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594861074508">
